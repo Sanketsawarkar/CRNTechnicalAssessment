@@ -1,0 +1,16 @@
+C:\Users\Dell\Documents\Test\Project\CRNTechnicalAssessment\src\CRNTechnicalAssessment.Application\bin\Debug\net8.0\CRNTechnicalAssessment.Application.deps.json
+C:\Users\Dell\Documents\Test\Project\CRNTechnicalAssessment\src\CRNTechnicalAssessment.Application\bin\Debug\net8.0\CRNTechnicalAssessment.Application.dll
+C:\Users\Dell\Documents\Test\Project\CRNTechnicalAssessment\src\CRNTechnicalAssessment.Application\bin\Debug\net8.0\CRNTechnicalAssessment.Application.pdb
+C:\Users\Dell\Documents\Test\Project\CRNTechnicalAssessment\src\CRNTechnicalAssessment.Application\bin\Debug\net8.0\CRNTechnicalAssessment.Domain.dll
+C:\Users\Dell\Documents\Test\Project\CRNTechnicalAssessment\src\CRNTechnicalAssessment.Application\bin\Debug\net8.0\CRNTechnicalAssessment.Domain.pdb
+C:\Users\Dell\Documents\Test\Project\CRNTechnicalAssessment\src\CRNTechnicalAssessment.Application\obj\Debug\net8.0\CRNTechnicalAssessment.Application.csproj.AssemblyReference.cache
+C:\Users\Dell\Documents\Test\Project\CRNTechnicalAssessment\src\CRNTechnicalAssessment.Application\obj\Debug\net8.0\CRNTechnicalAssessment.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\Documents\Test\Project\CRNTechnicalAssessment\src\CRNTechnicalAssessment.Application\obj\Debug\net8.0\CRNTechnicalAssessment.Application.AssemblyInfoInputs.cache
+C:\Users\Dell\Documents\Test\Project\CRNTechnicalAssessment\src\CRNTechnicalAssessment.Application\obj\Debug\net8.0\CRNTechnicalAssessment.Application.AssemblyInfo.cs
+C:\Users\Dell\Documents\Test\Project\CRNTechnicalAssessment\src\CRNTechnicalAssessment.Application\obj\Debug\net8.0\CRNTechnicalAssessment.Application.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Documents\Test\Project\CRNTechnicalAssessment\src\CRNTechnicalAssessment.Application\obj\Debug\net8.0\CRNTechnicalAssessment.Application.sourcelink.json
+C:\Users\Dell\Documents\Test\Project\CRNTechnicalAssessment\src\CRNTechnicalAssessment.Application\obj\Debug\net8.0\CRNTechn.872F9B52.Up2Date
+C:\Users\Dell\Documents\Test\Project\CRNTechnicalAssessment\src\CRNTechnicalAssessment.Application\obj\Debug\net8.0\CRNTechnicalAssessment.Application.dll
+C:\Users\Dell\Documents\Test\Project\CRNTechnicalAssessment\src\CRNTechnicalAssessment.Application\obj\Debug\net8.0\refint\CRNTechnicalAssessment.Application.dll
+C:\Users\Dell\Documents\Test\Project\CRNTechnicalAssessment\src\CRNTechnicalAssessment.Application\obj\Debug\net8.0\CRNTechnicalAssessment.Application.pdb
+C:\Users\Dell\Documents\Test\Project\CRNTechnicalAssessment\src\CRNTechnicalAssessment.Application\obj\Debug\net8.0\ref\CRNTechnicalAssessment.Application.dll

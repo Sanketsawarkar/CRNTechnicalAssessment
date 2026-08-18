@@ -1,0 +1,12 @@
+C:\Users\Dell\Documents\Test\Project\CRNTechnicalAssessment\src\CRNTechnicalAssessment.Domain\bin\Debug\net8.0\CRNTechnicalAssessment.Domain.deps.json
+C:\Users\Dell\Documents\Test\Project\CRNTechnicalAssessment\src\CRNTechnicalAssessment.Domain\bin\Debug\net8.0\CRNTechnicalAssessment.Domain.dll
+C:\Users\Dell\Documents\Test\Project\CRNTechnicalAssessment\src\CRNTechnicalAssessment.Domain\bin\Debug\net8.0\CRNTechnicalAssessment.Domain.pdb
+C:\Users\Dell\Documents\Test\Project\CRNTechnicalAssessment\src\CRNTechnicalAssessment.Domain\obj\Debug\net8.0\CRNTechnicalAssessment.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\Documents\Test\Project\CRNTechnicalAssessment\src\CRNTechnicalAssessment.Domain\obj\Debug\net8.0\CRNTechnicalAssessment.Domain.AssemblyInfoInputs.cache
+C:\Users\Dell\Documents\Test\Project\CRNTechnicalAssessment\src\CRNTechnicalAssessment.Domain\obj\Debug\net8.0\CRNTechnicalAssessment.Domain.AssemblyInfo.cs
+C:\Users\Dell\Documents\Test\Project\CRNTechnicalAssessment\src\CRNTechnicalAssessment.Domain\obj\Debug\net8.0\CRNTechnicalAssessment.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Documents\Test\Project\CRNTechnicalAssessment\src\CRNTechnicalAssessment.Domain\obj\Debug\net8.0\CRNTechnicalAssessment.Domain.sourcelink.json
+C:\Users\Dell\Documents\Test\Project\CRNTechnicalAssessment\src\CRNTechnicalAssessment.Domain\obj\Debug\net8.0\CRNTechnicalAssessment.Domain.dll
+C:\Users\Dell\Documents\Test\Project\CRNTechnicalAssessment\src\CRNTechnicalAssessment.Domain\obj\Debug\net8.0\refint\CRNTechnicalAssessment.Domain.dll
+C:\Users\Dell\Documents\Test\Project\CRNTechnicalAssessment\src\CRNTechnicalAssessment.Domain\obj\Debug\net8.0\CRNTechnicalAssessment.Domain.pdb
+C:\Users\Dell\Documents\Test\Project\CRNTechnicalAssessment\src\CRNTechnicalAssessment.Domain\obj\Debug\net8.0\ref\CRNTechnicalAssessment.Domain.dll

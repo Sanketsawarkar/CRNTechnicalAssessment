@@ -1,0 +1,869 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|solutionrelative:src\\crntechnicalassessment.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.infrastructure\\migrations\\20260817071759_addusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|solutionrelative:src\\crntechnicalassessment.infrastructure\\migrations\\20260817071759_addusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.infrastructure\\migrations\\20260817071759_addusers.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|solutionrelative:src\\crntechnicalassessment.infrastructure\\migrations\\20260817071759_addusers.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF6DF13B-3448-4AE4-8219-291AAB2F0EC6}|src\\CRNTechnicalAssessment.API\\CRNTechnicalAssessment.API.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.api\\logs\\app-20260818.log||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{CF6DF13B-3448-4AE4-8219-291AAB2F0EC6}|src\\CRNTechnicalAssessment.API\\CRNTechnicalAssessment.API.csproj|solutionrelative:src\\crntechnicalassessment.api\\logs\\app-20260818.log||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.infrastructure\\identity\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|solutionrelative:src\\crntechnicalassessment.infrastructure\\identity\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.infrastructure\\identity\\passwordhasherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|solutionrelative:src\\crntechnicalassessment.infrastructure\\identity\\passwordhasherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.infrastructure\\identity\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|solutionrelative:src\\crntechnicalassessment.infrastructure\\identity\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.infrastructure\\identity\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|solutionrelative:src\\crntechnicalassessment.infrastructure\\identity\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF6DF13B-3448-4AE4-8219-291AAB2F0EC6}|src\\CRNTechnicalAssessment.API\\CRNTechnicalAssessment.API.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CF6DF13B-3448-4AE4-8219-291AAB2F0EC6}|src\\CRNTechnicalAssessment.API\\CRNTechnicalAssessment.API.csproj|solutionrelative:src\\crntechnicalassessment.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF6DF13B-3448-4AE4-8219-291AAB2F0EC6}|src\\CRNTechnicalAssessment.API\\CRNTechnicalAssessment.API.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF6DF13B-3448-4AE4-8219-291AAB2F0EC6}|src\\CRNTechnicalAssessment.API\\CRNTechnicalAssessment.API.csproj|solutionrelative:src\\crntechnicalassessment.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.application\\dtos\\createuserrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|solutionrelative:src\\crntechnicalassessment.application\\dtos\\createuserrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF6DF13B-3448-4AE4-8219-291AAB2F0EC6}|src\\CRNTechnicalAssessment.API\\CRNTechnicalAssessment.API.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF6DF13B-3448-4AE4-8219-291AAB2F0EC6}|src\\CRNTechnicalAssessment.API\\CRNTechnicalAssessment.API.csproj|solutionrelative:src\\crntechnicalassessment.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.application\\interfaces\\ipasswordhasherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|solutionrelative:src\\crntechnicalassessment.application\\interfaces\\ipasswordhasherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4B63E73-AFFF-4103-BDC9-7C646EF628BC}|tests\\CRNTechnicalAssessment.API.Tests\\CRNTechnicalAssessment.API.Tests.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\tests\\crntechnicalassessment.api.tests\\productsapitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4B63E73-AFFF-4103-BDC9-7C646EF628BC}|tests\\CRNTechnicalAssessment.API.Tests\\CRNTechnicalAssessment.API.Tests.csproj|solutionrelative:tests\\crntechnicalassessment.api.tests\\productsapitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF6DF13B-3448-4AE4-8219-291AAB2F0EC6}|src\\CRNTechnicalAssessment.API\\CRNTechnicalAssessment.API.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF6DF13B-3448-4AE4-8219-291AAB2F0EC6}|src\\CRNTechnicalAssessment.API\\CRNTechnicalAssessment.API.csproj|solutionrelative:src\\crntechnicalassessment.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF6DF13B-3448-4AE4-8219-291AAB2F0EC6}|src\\CRNTechnicalAssessment.API\\CRNTechnicalAssessment.API.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF6DF13B-3448-4AE4-8219-291AAB2F0EC6}|src\\CRNTechnicalAssessment.API\\CRNTechnicalAssessment.API.csproj|solutionrelative:src\\crntechnicalassessment.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4B63E73-AFFF-4103-BDC9-7C646EF628BC}|tests\\CRNTechnicalAssessment.API.Tests\\CRNTechnicalAssessment.API.Tests.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\tests\\crntechnicalassessment.api.tests\\customwebapplicationfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4B63E73-AFFF-4103-BDC9-7C646EF628BC}|tests\\CRNTechnicalAssessment.API.Tests\\CRNTechnicalAssessment.API.Tests.csproj|solutionrelative:tests\\crntechnicalassessment.api.tests\\customwebapplicationfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4B63E73-AFFF-4103-BDC9-7C646EF628BC}|tests\\CRNTechnicalAssessment.API.Tests\\CRNTechnicalAssessment.API.Tests.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\tests\\crntechnicalassessment.api.tests\\crntechnicalassessment.api.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C4B63E73-AFFF-4103-BDC9-7C646EF628BC}|tests\\CRNTechnicalAssessment.API.Tests\\CRNTechnicalAssessment.API.Tests.csproj|solutionrelative:tests\\crntechnicalassessment.api.tests\\crntechnicalassessment.api.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF6DF13B-3448-4AE4-8219-291AAB2F0EC6}|src\\CRNTechnicalAssessment.API\\CRNTechnicalAssessment.API.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.api\\crntechnicalassessment.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CF6DF13B-3448-4AE4-8219-291AAB2F0EC6}|src\\CRNTechnicalAssessment.API\\CRNTechnicalAssessment.API.csproj|solutionrelative:src\\crntechnicalassessment.api\\crntechnicalassessment.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDD2BBB4-9D61-4393-B9F1-487F4EAC2AC2}|tests\\CRNTechnicalAssessment.Application.Tests\\CRNTechnicalAssessment.Application.Tests.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\tests\\crntechnicalassessment.application.tests\\services\\productservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDD2BBB4-9D61-4393-B9F1-487F4EAC2AC2}|tests\\CRNTechnicalAssessment.Application.Tests\\CRNTechnicalAssessment.Application.Tests.csproj|solutionrelative:tests\\crntechnicalassessment.application.tests\\services\\productservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.application\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|solutionrelative:src\\crntechnicalassessment.application\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A385557-5B52-4DA3-9252-A4B0854340FA}|src\\CRNTechnicalAssessment.Domain\\CRNTechnicalAssessment.Domain.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A385557-5B52-4DA3-9252-A4B0854340FA}|src\\CRNTechnicalAssessment.Domain\\CRNTechnicalAssessment.Domain.csproj|solutionrelative:src\\crntechnicalassessment.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.application\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|solutionrelative:src\\crntechnicalassessment.application\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.application\\dtos\\createproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|solutionrelative:src\\crntechnicalassessment.application\\dtos\\createproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDD2BBB4-9D61-4393-B9F1-487F4EAC2AC2}|tests\\CRNTechnicalAssessment.Application.Tests\\CRNTechnicalAssessment.Application.Tests.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\tests\\crntechnicalassessment.application.tests\\validators\\createproductvalidatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDD2BBB4-9D61-4393-B9F1-487F4EAC2AC2}|tests\\CRNTechnicalAssessment.Application.Tests\\CRNTechnicalAssessment.Application.Tests.csproj|solutionrelative:tests\\crntechnicalassessment.application.tests\\validators\\createproductvalidatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF6DF13B-3448-4AE4-8219-291AAB2F0EC6}|src\\CRNTechnicalAssessment.API\\CRNTechnicalAssessment.API.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.api\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF6DF13B-3448-4AE4-8219-291AAB2F0EC6}|src\\CRNTechnicalAssessment.API\\CRNTechnicalAssessment.API.csproj|solutionrelative:src\\crntechnicalassessment.api\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.infrastructure\\data\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|solutionrelative:src\\crntechnicalassessment.infrastructure\\data\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.application\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|solutionrelative:src\\crntechnicalassessment.application\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.application\\validators\\createproductvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|solutionrelative:src\\crntechnicalassessment.application\\validators\\createproductvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.application\\dtos\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|solutionrelative:src\\crntechnicalassessment.application\\dtos\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.application\\dtos\\refreshtokenrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|solutionrelative:src\\crntechnicalassessment.application\\dtos\\refreshtokenrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.application\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|solutionrelative:src\\crntechnicalassessment.application\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A385557-5B52-4DA3-9252-A4B0854340FA}|src\\CRNTechnicalAssessment.Domain\\CRNTechnicalAssessment.Domain.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A385557-5B52-4DA3-9252-A4B0854340FA}|src\\CRNTechnicalAssessment.Domain\\CRNTechnicalAssessment.Domain.csproj|solutionrelative:src\\crntechnicalassessment.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.application\\dtos\\userresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|solutionrelative:src\\crntechnicalassessment.application\\dtos\\userresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.application\\crntechnicalassessment.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|solutionrelative:src\\crntechnicalassessment.application\\crntechnicalassessment.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.infrastructure\\data\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|solutionrelative:src\\crntechnicalassessment.infrastructure\\data\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.application\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|solutionrelative:src\\crntechnicalassessment.application\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.application\\crntechnicalassessment.application.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|solutionrelative:src\\crntechnicalassessment.application\\crntechnicalassessment.application.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.application\\settings\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|solutionrelative:src\\crntechnicalassessment.application\\settings\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.infrastructure\\data\\configurations\\refreshtokenconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|solutionrelative:src\\crntechnicalassessment.infrastructure\\data\\configurations\\refreshtokenconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A385557-5B52-4DA3-9252-A4B0854340FA}|src\\CRNTechnicalAssessment.Domain\\CRNTechnicalAssessment.Domain.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.domain\\entities\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A385557-5B52-4DA3-9252-A4B0854340FA}|src\\CRNTechnicalAssessment.Domain\\CRNTechnicalAssessment.Domain.csproj|solutionrelative:src\\crntechnicalassessment.domain\\entities\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.application\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|solutionrelative:src\\crntechnicalassessment.application\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.application\\validators\\updateproductvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|solutionrelative:src\\crntechnicalassessment.application\\validators\\updateproductvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.application\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|solutionrelative:src\\crntechnicalassessment.application\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.application\\dtos\\updateproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D80D5C5C-42C1-4A13-934E-F7FEC13FEC3B}|src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj|solutionrelative:src\\crntechnicalassessment.application\\dtos\\updateproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.infrastructure\\data\\configurations\\itemconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|solutionrelative:src\\crntechnicalassessment.infrastructure\\data\\configurations\\itemconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.infrastructure\\data\\configurations\\productconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|solutionrelative:src\\crntechnicalassessment.infrastructure\\data\\configurations\\productconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A385557-5B52-4DA3-9252-A4B0854340FA}|src\\CRNTechnicalAssessment.Domain\\CRNTechnicalAssessment.Domain.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.domain\\entities\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A385557-5B52-4DA3-9252-A4B0854340FA}|src\\CRNTechnicalAssessment.Domain\\CRNTechnicalAssessment.Domain.csproj|solutionrelative:src\\crntechnicalassessment.domain\\entities\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDD2BBB4-9D61-4393-B9F1-487F4EAC2AC2}|tests\\CRNTechnicalAssessment.Application.Tests\\CRNTechnicalAssessment.Application.Tests.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\tests\\crntechnicalassessment.application.tests\\crntechnicalassessment.application.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CDD2BBB4-9D61-4393-B9F1-487F4EAC2AC2}|tests\\CRNTechnicalAssessment.Application.Tests\\CRNTechnicalAssessment.Application.Tests.csproj|solutionrelative:tests\\crntechnicalassessment.application.tests\\crntechnicalassessment.application.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.infrastructure\\crntechnicalassessment.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|solutionrelative:src\\crntechnicalassessment.infrastructure\\crntechnicalassessment.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.infrastructure\\migrations\\20260817054212_addrefreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|solutionrelative:src\\crntechnicalassessment.infrastructure\\migrations\\20260817054212_addrefreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.infrastructure\\migrations\\20260814115141_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|solutionrelative:src\\crntechnicalassessment.infrastructure\\migrations\\20260814115141_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|c:\\users\\dell\\documents\\test\\project\\crntechnicalassessment\\src\\crntechnicalassessment.infrastructure\\migrations\\20260817071726_adduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D12550D-2814-47B1-AEA7-5CFC2D11960D}|src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj|solutionrelative:src\\crntechnicalassessment.infrastructure\\migrations\\20260817071726_adduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PasswordHasherService.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\Identity\\PasswordHasherService.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Infrastructure\\Identity\\PasswordHasherService.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\Identity\\PasswordHasherService.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Infrastructure\\Identity\\PasswordHasherService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA7wBwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T07:20:03.715Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20260817071759_AddUsers.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\Migrations\\20260817071759_AddUsers.Designer.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Infrastructure\\Migrations\\20260817071759_AddUsers.Designer.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\Migrations\\20260817071759_AddUsers.Designer.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Infrastructure\\Migrations\\20260817071759_AddUsers.Designer.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAADwv6sAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-18T09:28:29.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20260817071759_AddUsers.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\Migrations\\20260817071759_AddUsers.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Infrastructure\\Migrations\\20260817071759_AddUsers.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\Migrations\\20260817071759_AddUsers.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Infrastructure\\Migrations\\20260817071759_AddUsers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T07:17:59.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAiwBoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T07:44:54.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "app-20260818.log",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.API\\logs\\app-20260818.log",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.API\\logs\\app-20260818.log",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.API\\logs\\app-20260818.log",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.API\\logs\\app-20260818.log",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAawGIAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-08-18T09:28:11.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.API\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.API\\appsettings.json",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-14T07:45:47.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\Identity\\AuthService.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Infrastructure\\Identity\\AuthService.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\Identity\\AuthService.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Infrastructure\\Identity\\AuthService.cs",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAwwJwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T06:04:23.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "JwtTokenService.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\Identity\\JwtTokenService.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Infrastructure\\Identity\\JwtTokenService.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\Identity\\JwtTokenService.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Infrastructure\\Identity\\JwtTokenService.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAADwvzMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T06:06:28.856Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\Identity\\UserService.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Infrastructure\\Identity\\UserService.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\Identity\\UserService.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Infrastructure\\Identity\\UserService.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAADwvzYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T07:55:13.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.API\\Program.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.API\\Program.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.API\\Program.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.API\\Program.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAiwHcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T07:46:44.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CreateUserRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\DTOs\\CreateUserRequestDto.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Application\\DTOs\\CreateUserRequestDto.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\DTOs\\CreateUserRequestDto.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Application\\DTOs\\CreateUserRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T07:51:26.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.API\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.API\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.API\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.API\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAkwBcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T07:57:30.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IPasswordHasherService.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\Interfaces\\IPasswordHasherService.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Application\\Interfaces\\IPasswordHasherService.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\Interfaces\\IPasswordHasherService.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Application\\Interfaces\\IPasswordHasherService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T07:19:35.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProductsApiTests.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\tests\\CRNTechnicalAssessment.API.Tests\\ProductsApiTests.cs",
+              "RelativeDocumentMoniker": "tests\\CRNTechnicalAssessment.API.Tests\\ProductsApiTests.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\tests\\CRNTechnicalAssessment.API.Tests\\ProductsApiTests.cs",
+              "RelativeToolTip": "tests\\CRNTechnicalAssessment.API.Tests\\ProductsApiTests.cs",
+              "ViewState": "AgIAALUBAAAAAAAAAAAAwMIBAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T13:35:31.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T06:17:40.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.API\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.API\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.API\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.API\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAwAoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T08:01:17.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CRNTechnicalAssessment.API.Tests.csproj",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\tests\\CRNTechnicalAssessment.API.Tests\\CRNTechnicalAssessment.API.Tests.csproj",
+              "RelativeDocumentMoniker": "tests\\CRNTechnicalAssessment.API.Tests\\CRNTechnicalAssessment.API.Tests.csproj",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\tests\\CRNTechnicalAssessment.API.Tests\\CRNTechnicalAssessment.API.Tests.csproj",
+              "RelativeToolTip": "tests\\CRNTechnicalAssessment.API.Tests\\CRNTechnicalAssessment.API.Tests.csproj",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAQwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-08-14T07:31:39.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CustomWebApplicationFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\tests\\CRNTechnicalAssessment.API.Tests\\CustomWebApplicationFactory.cs",
+              "RelativeDocumentMoniker": "tests\\CRNTechnicalAssessment.API.Tests\\CustomWebApplicationFactory.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\tests\\CRNTechnicalAssessment.API.Tests\\CustomWebApplicationFactory.cs",
+              "RelativeToolTip": "tests\\CRNTechnicalAssessment.API.Tests\\CustomWebApplicationFactory.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAiwC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-18T06:06:48.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Application\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\Services\\ProductService.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Application\\Services\\ProductService.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAqwEAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T07:58:14.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Domain\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Domain\\Entities\\Product.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Domain\\Entities\\Product.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Domain\\Entities\\Product.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T07:39:23.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CRNTechnicalAssessment.API.csproj",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.API\\CRNTechnicalAssessment.API.csproj",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.API\\CRNTechnicalAssessment.API.csproj",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.API\\CRNTechnicalAssessment.API.csproj",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.API\\CRNTechnicalAssessment.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-08-17T14:08:58.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\Interfaces\\IProductService.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Application\\Interfaces\\IProductService.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\Interfaces\\IProductService.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Application\\Interfaces\\IProductService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAEwA8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T07:50:37.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CreateProductDto.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\DTOs\\CreateProductDto.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Application\\DTOs\\CreateProductDto.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\DTOs\\CreateProductDto.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Application\\DTOs\\CreateProductDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T07:48:39.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ProductServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\tests\\CRNTechnicalAssessment.Application.Tests\\Services\\ProductServiceTests.cs",
+              "RelativeDocumentMoniker": "tests\\CRNTechnicalAssessment.Application.Tests\\Services\\ProductServiceTests.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\tests\\CRNTechnicalAssessment.Application.Tests\\Services\\ProductServiceTests.cs",
+              "RelativeToolTip": "tests\\CRNTechnicalAssessment.Application.Tests\\Services\\ProductServiceTests.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAiwGEAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T13:05:37.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CreateProductValidatorTests.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\tests\\CRNTechnicalAssessment.Application.Tests\\Validators\\CreateProductValidatorTests.cs",
+              "RelativeDocumentMoniker": "tests\\CRNTechnicalAssessment.Application.Tests\\Validators\\CreateProductValidatorTests.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\tests\\CRNTechnicalAssessment.Application.Tests\\Validators\\CreateProductValidatorTests.cs",
+              "RelativeToolTip": "tests\\CRNTechnicalAssessment.Application.Tests\\Validators\\CreateProductValidatorTests.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAmwBEAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T12:56:38.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ExceptionHandlingMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.API\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.API\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.API\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.API\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T10:16:15.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\Interfaces\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Application\\Interfaces\\IProductRepository.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\Interfaces\\IProductRepository.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Application\\Interfaces\\IProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T07:51:45.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\Data\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Infrastructure\\Data\\Repositories\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\Data\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Infrastructure\\Data\\Repositories\\ProductRepository.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAUwEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T07:52:43.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CreateProductValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\Validators\\CreateProductValidator.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Application\\Validators\\CreateProductValidator.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\Validators\\CreateProductValidator.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Application\\Validators\\CreateProductValidator.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T08:05:50.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AuthResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\DTOs\\AuthResponseDto.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Application\\DTOs\\AuthResponseDto.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\DTOs\\AuthResponseDto.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Application\\DTOs\\AuthResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T05:35:42.974Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "RefreshTokenRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\DTOs\\RefreshTokenRequestDto.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Application\\DTOs\\RefreshTokenRequestDto.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\DTOs\\RefreshTokenRequestDto.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Application\\DTOs\\RefreshTokenRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T12:54:49.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "UserResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\DTOs\\UserResponseDto.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Application\\DTOs\\UserResponseDto.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\DTOs\\UserResponseDto.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Application\\DTOs\\UserResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T07:52:02.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Domain\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Domain\\Entities\\User.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Domain\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T07:14:57.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Application\\Interfaces\\IUserService.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Application\\Interfaces\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T07:52:25.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "20260817071726_AddUser.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\Migrations\\20260817071726_AddUser.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Infrastructure\\Migrations\\20260817071726_AddUser.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\Migrations\\20260817071726_AddUser.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Infrastructure\\Migrations\\20260817071726_AddUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T07:17:26.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "UserConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\Data\\Configurations\\UserConfiguration.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Infrastructure\\Data\\Configurations\\UserConfiguration.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\Data\\Configurations\\UserConfiguration.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Infrastructure\\Data\\Configurations\\UserConfiguration.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T07:15:24.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CRNTechnicalAssessment.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-08-17T05:45:28.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "JwtSettings.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\Settings\\JwtSettings.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Application\\Settings\\JwtSettings.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\Settings\\JwtSettings.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Application\\Settings\\JwtSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T05:46:56.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Application\\Interfaces\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Application\\Interfaces\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T05:34:42.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "CRNTechnicalAssessment.Application",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Application\\CRNTechnicalAssessment.Application.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-08-17T05:54:22.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "20260817054212_AddRefreshToken.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\Migrations\\20260817054212_AddRefreshToken.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Infrastructure\\Migrations\\20260817054212_AddRefreshToken.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\Migrations\\20260817054212_AddRefreshToken.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Infrastructure\\Migrations\\20260817054212_AddRefreshToken.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T05:42:12.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "RefreshTokenConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\Data\\Configurations\\RefreshTokenConfiguration.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Infrastructure\\Data\\Configurations\\RefreshTokenConfiguration.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\Data\\Configurations\\RefreshTokenConfiguration.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Infrastructure\\Data\\Configurations\\RefreshTokenConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T05:38:23.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "RefreshToken.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Domain\\Entities\\RefreshToken.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Domain\\Entities\\RefreshToken.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Domain\\Entities\\RefreshToken.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Domain\\Entities\\RefreshToken.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T05:37:37.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "LoginRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\DTOs\\LoginRequestDto.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Application\\DTOs\\LoginRequestDto.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\DTOs\\LoginRequestDto.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Application\\DTOs\\LoginRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T05:35:13.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "20260814115141_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\Migrations\\20260814115141_InitialCreate.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Infrastructure\\Migrations\\20260814115141_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\Migrations\\20260814115141_InitialCreate.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Infrastructure\\Migrations\\20260814115141_InitialCreate.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T11:51:41.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "UpdateProductValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\Validators\\UpdateProductValidator.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Application\\Validators\\UpdateProductValidator.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\Validators\\UpdateProductValidator.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Application\\Validators\\UpdateProductValidator.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwBQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T08:06:03.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ProductDto.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\DTOs\\ProductDto.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Application\\DTOs\\ProductDto.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\DTOs\\ProductDto.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Application\\DTOs\\ProductDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T07:48:31.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "UpdateProductDto.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\DTOs\\UpdateProductDto.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Application\\DTOs\\UpdateProductDto.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Application\\DTOs\\UpdateProductDto.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Application\\DTOs\\UpdateProductDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T07:48:48.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ItemConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\Data\\Configurations\\ItemConfiguration.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Infrastructure\\Data\\Configurations\\ItemConfiguration.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\Data\\Configurations\\ItemConfiguration.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Infrastructure\\Data\\Configurations\\ItemConfiguration.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwCMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T07:43:19.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ProductConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\Data\\Configurations\\ProductConfiguration.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Infrastructure\\Data\\Configurations\\ProductConfiguration.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\Data\\Configurations\\ProductConfiguration.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Infrastructure\\Data\\Configurations\\ProductConfiguration.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwCgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T07:42:00.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Domain\\Entities\\Item.cs",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Domain\\Entities\\Item.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Domain\\Entities\\Item.cs",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Domain\\Entities\\Item.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T07:40:02.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "CRNTechnicalAssessment.Application.Tests.csproj",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\tests\\CRNTechnicalAssessment.Application.Tests\\CRNTechnicalAssessment.Application.Tests.csproj",
+              "RelativeDocumentMoniker": "tests\\CRNTechnicalAssessment.Application.Tests\\CRNTechnicalAssessment.Application.Tests.csproj",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\tests\\CRNTechnicalAssessment.Application.Tests\\CRNTechnicalAssessment.Application.Tests.csproj",
+              "RelativeToolTip": "tests\\CRNTechnicalAssessment.Application.Tests\\CRNTechnicalAssessment.Application.Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-08-14T07:32:04.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "CRNTechnicalAssessment.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Test\\Project\\CRNTechnicalAssessment\\src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj",
+              "RelativeToolTip": "src\\CRNTechnicalAssessment.Infrastructure\\CRNTechnicalAssessment.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-08-14T07:22:03.636Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

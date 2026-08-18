@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="src/CRNTechnicalAssessment.API/CRNTechnicalAssessment.API.csproj" Id="cf6df13b-3448-4ae4-8219-291aab2f0ec6" />
+  <Project Path="src/CRNTechnicalAssessment.Application/CRNTechnicalAssessment.Application.csproj" Id="d80d5c5c-42c1-4a13-934e-f7fec13fec3b" />
+  <Project Path="src/CRNTechnicalAssessment.Domain/CRNTechnicalAssessment.Domain.csproj" Id="6a385557-5b52-4da3-9252-a4b0854340fa" />
+  <Project Path="src/CRNTechnicalAssessment.Infrastructure/CRNTechnicalAssessment.Infrastructure.csproj" Id="3d12550d-2814-47b1-aea7-5cfc2d11960d" />
+  <Project Path="tests/CRNTechnicalAssessment.API.Tests/CRNTechnicalAssessment.API.Tests.csproj" Id="c4b63e73-afff-4103-bdc9-7c646ef628bc" />
+  <Project Path="tests/CRNTechnicalAssessment.Application.Tests/CRNTechnicalAssessment.Application.Tests.csproj" Id="cdd2bbb4-9d61-4393-b9f1-487f4eac2ac2" />
+  <Project Path="tests/CRNTechnicalAssessment.Infrastructure.Tests/CRNTechnicalAssessment.Infrastructure.Tests.csproj" Id="fb279dab-a0b1-43c2-a81d-9471fb2e1734" />
+</Solution>

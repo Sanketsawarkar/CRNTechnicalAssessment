@@ -1,0 +1,100 @@
+2026-08-17 18:08:16.409 +05:30 [INF] User profile is available. Using 'C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-08-17 18:08:16.599 +05:30 [INF] Now listening on: https://localhost:7276
+2026-08-17 18:08:16.600 +05:30 [INF] Now listening on: http://localhost:5010
+2026-08-17 18:08:16.638 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-17 18:08:16.639 +05:30 [INF] Hosting environment: Development
+2026-08-17 18:08:16.640 +05:30 [INF] Content root path: C:\Users\Dell\Documents\Test\Project\CRNTechnicalAssessment\src\CRNTechnicalAssessment.API
+2026-08-17 18:08:17.377 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/swagger/index.html - null null
+2026-08-17 18:08:17.643 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2026-08-17 18:08:17.644 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2026-08-17 18:08:17.648 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/swagger/index.html - 200 null text/html;charset=utf-8 280.3493ms
+2026-08-17 18:08:17.656 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 14957 application/javascript; charset=utf-8 12.8638ms
+2026-08-17 18:08:17.683 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.011ms
+2026-08-17 18:08:17.797 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/swagger/v1/swagger.json - null null
+2026-08-17 18:08:17.824 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 27.4558ms
+2026-08-17 18:08:58.582 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/api/Auth/login - application/json 52
+2026-08-17 18:08:58.608 +05:30 [INF] CORS policy execution failed.
+2026-08-17 18:08:58.610 +05:30 [INF] Request origin https://localhost:7276 does not have permission to access the resource.
+2026-08-17 18:08:58.695 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.AuthController.Login (CRNTechnicalAssessment.API)'
+2026-08-17 18:08:58.735 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(CRNTechnicalAssessment.Application.DTOs.LoginRequestDto) on controller CRNTechnicalAssessment.API.Controllers.AuthController (CRNTechnicalAssessment.API).
+2026-08-17 18:09:00.711 +05:30 [INF] Executed DbCommand (85ms) [Parameters=[@__request_Username_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[IsActive], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__request_Username_0 AND [u].[IsActive] = CAST(1 AS bit)
+2026-08-17 18:09:01.229 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 500), @p4='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([CreatedAt], [ExpiresAt], [IsRevoked], [Token], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-08-17 18:09:01.277 +05:30 [INF] Executing OkObjectResult, writing value of type 'CRNTechnicalAssessment.Application.DTOs.AuthResponseDto'.
+2026-08-17 18:09:01.296 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.AuthController.Login (CRNTechnicalAssessment.API) in 2554.3932ms
+2026-08-17 18:09:01.299 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.AuthController.Login (CRNTechnicalAssessment.API)'
+2026-08-17 18:09:01.303 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 2697.7836 ms
+2026-08-17 18:09:01.313 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/api/Auth/login - 200 null application/json; charset=utf-8 2730.9615ms
+2026-08-17 18:09:51.612 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/api/Products?pageNumber=1&pageSize=10 - null null
+2026-08-17 18:09:51.692 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-17 18:09:51.701 +05:30 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(Int32, Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-17 18:09:51.822 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Product] AS [p]
+2026-08-17 18:09:51.845 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CreatedBy], [p].[CreatedOn], [p].[ModifiedBy], [p].[ModifiedOn], [p].[ProductName]
+FROM [Product] AS [p]
+ORDER BY [p].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-08-17 18:09:51.852 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[CRNTechnicalAssessment.Domain.Entities.Product, CRNTechnicalAssessment.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[CRNTechnicalAssessment.Application.DTOs.ProductDto, CRNTechnicalAssessment.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-17 18:09:51.862 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API) in 158.6447ms
+2026-08-17 18:09:51.864 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-17 18:09:51.865 +05:30 [INF] HTTP GET /api/Products responded 200 in 247.7192 ms
+2026-08-17 18:09:51.866 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/api/Products?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 255.0037ms
+2026-08-17 18:19:41.528 +05:30 [INF] User profile is available. Using 'C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-08-17 18:19:41.681 +05:30 [INF] Now listening on: https://localhost:7276
+2026-08-17 18:19:41.681 +05:30 [INF] Now listening on: http://localhost:5010
+2026-08-17 18:19:41.717 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-17 18:19:41.718 +05:30 [INF] Hosting environment: Development
+2026-08-17 18:19:41.719 +05:30 [INF] Content root path: C:\Users\Dell\Documents\Test\Project\CRNTechnicalAssessment\src\CRNTechnicalAssessment.API
+2026-08-17 18:19:42.465 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/swagger/index.html - null null
+2026-08-17 18:19:42.619 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2026-08-17 18:19:42.619 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2026-08-17 18:19:42.621 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/swagger/index.html - 200 null text/html;charset=utf-8 162.2179ms
+2026-08-17 18:19:42.629 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 14957 application/javascript; charset=utf-8 9.9926ms
+2026-08-17 18:19:42.660 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.7615ms
+2026-08-17 18:19:42.760 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/swagger/v1/swagger.json - null null
+2026-08-17 18:19:42.775 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.6306ms
+2026-08-17 18:20:02.375 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7276/api/Auth/login - application/json 52
+2026-08-17 18:20:02.391 +05:30 [INF] CORS policy execution failed.
+2026-08-17 18:20:02.393 +05:30 [INF] Request origin https://localhost:7276 does not have permission to access the resource.
+2026-08-17 18:20:02.442 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.AuthController.Login (CRNTechnicalAssessment.API)'
+2026-08-17 18:20:02.466 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(CRNTechnicalAssessment.Application.DTOs.LoginRequestDto) on controller CRNTechnicalAssessment.API.Controllers.AuthController (CRNTechnicalAssessment.API).
+2026-08-17 18:20:04.062 +05:30 [INF] Executed DbCommand (73ms) [Parameters=[@__request_Username_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[IsActive], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__request_Username_0 AND [u].[IsActive] = CAST(1 AS bit)
+2026-08-17 18:20:04.499 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 500), @p4='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([CreatedAt], [ExpiresAt], [IsRevoked], [Token], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-08-17 18:20:04.557 +05:30 [INF] Executing OkObjectResult, writing value of type 'CRNTechnicalAssessment.Application.DTOs.AuthResponseDto'.
+2026-08-17 18:20:04.572 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.AuthController.Login (CRNTechnicalAssessment.API) in 2099.5254ms
+2026-08-17 18:20:04.574 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.AuthController.Login (CRNTechnicalAssessment.API)'
+2026-08-17 18:20:04.578 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 2191.3496 ms
+2026-08-17 18:20:04.584 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7276/api/Auth/login - 200 null application/json; charset=utf-8 2208.4798ms
+2026-08-17 18:20:26.155 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7276/api/Products?pageNumber=1&pageSize=10 - null null
+2026-08-17 18:20:26.229 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-17 18:20:26.237 +05:30 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(Int32, Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-17 18:20:26.370 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Product] AS [p]
+2026-08-17 18:20:26.393 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CreatedBy], [p].[CreatedOn], [p].[ModifiedBy], [p].[ModifiedOn], [p].[ProductName]
+FROM [Product] AS [p]
+ORDER BY [p].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-08-17 18:20:26.400 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[CRNTechnicalAssessment.Domain.Entities.Product, CRNTechnicalAssessment.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[CRNTechnicalAssessment.Application.DTOs.ProductDto, CRNTechnicalAssessment.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-17 18:20:26.409 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API) in 168.1895ms
+2026-08-17 18:20:26.412 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-17 18:20:26.413 +05:30 [INF] HTTP GET /api/Products responded 200 in 254.0528 ms
+2026-08-17 18:20:26.416 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7276/api/Products?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 260.6465ms

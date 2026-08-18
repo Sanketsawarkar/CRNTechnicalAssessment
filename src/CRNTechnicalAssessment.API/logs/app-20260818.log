@@ -1,0 +1,183 @@
+2026-08-18 13:30:50.883 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-08-18 13:30:50.947 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-08-18 13:30:50.969 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-08-18 13:31:48.352 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-08-18 13:31:48.416 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-08-18 13:31:48.420 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-08-18 13:31:48.422 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-08-18 13:31:48.444 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-08-18 13:31:48.458 +05:30 [INF] No migrations were applied. The database is already up to date.
+2026-08-18 13:36:35.339 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-08-18 13:36:35.397 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-08-18 13:36:35.402 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-08-18 13:36:35.475 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2026-08-18 13:36:35.480 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-08-18 13:36:35.484 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-08-18 13:36:35.496 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-08-18 13:36:35.510 +05:30 [INF] Applying migration '20260814115141_InitialCreate'.
+2026-08-18 13:36:35.544 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Product] (
+    [Id] int NOT NULL IDENTITY,
+    [ProductName] nvarchar(255) NOT NULL,
+    [CreatedBy] nvarchar(100) NOT NULL,
+    [CreatedOn] datetime2 NOT NULL,
+    [ModifiedBy] nvarchar(100) NULL,
+    [ModifiedOn] datetime2 NULL,
+    CONSTRAINT [PK_Product] PRIMARY KEY ([Id])
+);
+2026-08-18 13:36:35.550 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Item] (
+    [Id] int NOT NULL IDENTITY,
+    [ProductId] int NOT NULL,
+    [Quantity] int NOT NULL,
+    CONSTRAINT [PK_Item] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Item_Product_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Product] ([Id]) ON DELETE CASCADE
+);
+2026-08-18 13:36:35.555 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Item_ProductId] ON [Item] ([ProductId]);
+2026-08-18 13:36:35.560 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Product_ProductName] ON [Product] ([ProductName]);
+2026-08-18 13:36:35.569 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260814115141_InitialCreate', N'8.0.19');
+2026-08-18 13:36:35.590 +05:30 [INF] Applying migration '20260817054212_AddRefreshToken'.
+2026-08-18 13:36:35.603 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [RefreshTokens] (
+    [Id] int NOT NULL IDENTITY,
+    [Username] nvarchar(100) NOT NULL,
+    [Token] nvarchar(500) NOT NULL,
+    [ExpiresAt] datetime2 NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    [IsRevoked] bit NOT NULL,
+    CONSTRAINT [PK_RefreshTokens] PRIMARY KEY ([Id])
+);
+2026-08-18 13:36:35.607 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_RefreshTokens_Token] ON [RefreshTokens] ([Token]);
+2026-08-18 13:36:35.611 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260817054212_AddRefreshToken', N'8.0.19');
+2026-08-18 13:36:35.622 +05:30 [INF] Applying migration '20260817071726_AddUser'.
+2026-08-18 13:36:35.637 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Users] (
+    [Id] int NOT NULL IDENTITY,
+    [Username] nvarchar(100) NOT NULL,
+    [PasswordHash] nvarchar(500) NOT NULL,
+    [Role] nvarchar(50) NOT NULL,
+    [IsActive] bit NOT NULL,
+    CONSTRAINT [PK_Users] PRIMARY KEY ([Id])
+);
+2026-08-18 13:36:35.641 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_Users_Username] ON [Users] ([Username]);
+2026-08-18 13:36:35.645 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260817071726_AddUser', N'8.0.19');
+2026-08-18 13:36:35.651 +05:30 [INF] Applying migration '20260817071759_AddUsers'.
+2026-08-18 13:36:35.661 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260817071759_AddUsers', N'8.0.19');
+2026-08-18 15:36:44.559 +05:30 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-08-18 15:36:44.644 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-08-18 15:36:44.656 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-08-18 15:36:44.758 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2026-08-18 15:36:44.770 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-08-18 15:36:44.781 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-08-18 15:36:44.811 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-08-18 15:36:44.837 +05:30 [INF] Applying migration '20260814115141_InitialCreate'.
+2026-08-18 15:36:44.879 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Product] (
+    [Id] int NOT NULL IDENTITY,
+    [ProductName] nvarchar(255) NOT NULL,
+    [CreatedBy] nvarchar(100) NOT NULL,
+    [CreatedOn] datetime2 NOT NULL,
+    [ModifiedBy] nvarchar(100) NULL,
+    [ModifiedOn] datetime2 NULL,
+    CONSTRAINT [PK_Product] PRIMARY KEY ([Id])
+);
+2026-08-18 15:36:44.893 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Item] (
+    [Id] int NOT NULL IDENTITY,
+    [ProductId] int NOT NULL,
+    [Quantity] int NOT NULL,
+    CONSTRAINT [PK_Item] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Item_Product_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Product] ([Id]) ON DELETE CASCADE
+);
+2026-08-18 15:36:44.902 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Item_ProductId] ON [Item] ([ProductId]);
+2026-08-18 15:36:44.910 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Product_ProductName] ON [Product] ([ProductName]);
+2026-08-18 15:36:44.930 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260814115141_InitialCreate', N'8.0.19');
+2026-08-18 15:36:44.948 +05:30 [INF] Applying migration '20260817054212_AddRefreshToken'.
+2026-08-18 15:36:44.965 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [RefreshTokens] (
+    [Id] int NOT NULL IDENTITY,
+    [Username] nvarchar(100) NOT NULL,
+    [Token] nvarchar(500) NOT NULL,
+    [ExpiresAt] datetime2 NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    [IsRevoked] bit NOT NULL,
+    CONSTRAINT [PK_RefreshTokens] PRIMARY KEY ([Id])
+);
+2026-08-18 15:36:44.976 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_RefreshTokens_Token] ON [RefreshTokens] ([Token]);
+2026-08-18 15:36:44.984 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260817054212_AddRefreshToken', N'8.0.19');
+2026-08-18 15:36:44.997 +05:30 [INF] Applying migration '20260817071726_AddUser'.
+2026-08-18 15:36:45.011 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Users] (
+    [Id] int NOT NULL IDENTITY,
+    [Username] nvarchar(100) NOT NULL,
+    [PasswordHash] nvarchar(500) NOT NULL,
+    [Role] nvarchar(50) NOT NULL,
+    [IsActive] bit NOT NULL,
+    CONSTRAINT [PK_Users] PRIMARY KEY ([Id])
+);
+2026-08-18 15:36:45.021 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_Users_Username] ON [Users] ([Username]);
+2026-08-18 15:36:45.030 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260817071726_AddUser', N'8.0.19');
+2026-08-18 15:36:45.041 +05:30 [INF] Applying migration '20260817071759_AddUsers'.
+2026-08-18 15:36:45.053 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260817071759_AddUsers', N'8.0.19');

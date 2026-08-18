@@ -1,0 +1,62 @@
+2026-08-17 19:41:00.893 +05:30 [INF] User profile is available. Using 'C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-08-17 19:41:01.373 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - null null
+2026-08-17 19:41:01.399 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-08-17 19:41:01.437 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-08-17 19:41:01.440 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-17 19:41:01.442 +05:30 [INF] HTTP GET /api/Products responded 401 in 43.2503 ms
+2026-08-17 19:41:01.446 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - 401 null null 73.6845ms
+2026-08-17 19:44:10.018 +05:30 [INF] User profile is available. Using 'C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-08-17 19:44:10.480 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - null null
+2026-08-17 19:44:10.503 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-08-17 19:44:10.531 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-08-17 19:44:10.534 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-17 19:44:10.535 +05:30 [INF] HTTP GET /api/Products responded 401 in 32.9879 ms
+2026-08-17 19:44:10.539 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - 401 null null 59.6146ms
+2026-08-17 19:44:10.590 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - null null
+2026-08-17 19:44:10.621 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-17 19:44:10.637 +05:30 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(Int32, Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-17 19:44:11.490 +05:30 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Product] AS [p]
+2026-08-17 19:44:11.548 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CreatedBy], [p].[CreatedOn], [p].[ModifiedBy], [p].[ModifiedOn], [p].[ProductName]
+FROM [Product] AS [p]
+ORDER BY [p].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-08-17 19:44:11.556 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[CRNTechnicalAssessment.Domain.Entities.Product, CRNTechnicalAssessment.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[CRNTechnicalAssessment.Application.DTOs.ProductDto, CRNTechnicalAssessment.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-17 19:44:11.576 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API) in 937.4057ms
+2026-08-17 19:44:11.577 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-17 19:44:11.577 +05:30 [INF] HTTP GET /api/Products responded 200 in 986.0371 ms
+2026-08-17 19:44:11.583 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 992.9876ms
+2026-08-17 19:46:29.018 +05:30 [INF] User profile is available. Using 'C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-08-17 19:46:29.498 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - null null
+2026-08-17 19:46:29.519 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-08-17 19:46:29.554 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-08-17 19:46:29.556 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-17 19:46:29.558 +05:30 [INF] HTTP GET /api/Products responded 401 in 38.9463 ms
+2026-08-17 19:46:29.562 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - 401 null null 64.5667ms
+2026-08-17 19:46:29.619 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 30
+2026-08-17 19:46:29.654 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-08-17 19:46:29.655 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-08-17 19:46:29.656 +05:30 [INF] HTTP POST /api/Products responded 403 in 33.5095 ms
+2026-08-17 19:46:29.656 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 403 null null 36.9456ms
+2026-08-17 19:46:29.658 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - null null
+2026-08-17 19:46:29.662 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-17 19:46:29.672 +05:30 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(Int32, Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-17 19:46:30.415 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Product] AS [p]
+2026-08-17 19:46:30.486 +05:30 [INF] Executed DbCommand (25ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CreatedBy], [p].[CreatedOn], [p].[ModifiedBy], [p].[ModifiedOn], [p].[ProductName]
+FROM [Product] AS [p]
+ORDER BY [p].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-08-17 19:46:30.493 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[CRNTechnicalAssessment.Domain.Entities.Product, CRNTechnicalAssessment.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[CRNTechnicalAssessment.Application.DTOs.ProductDto, CRNTechnicalAssessment.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-17 19:46:30.507 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API) in 833.6555ms
+2026-08-17 19:46:30.508 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-17 19:46:30.509 +05:30 [INF] HTTP GET /api/Products responded 200 in 849.2768 ms
+2026-08-17 19:46:30.513 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 854.6516ms

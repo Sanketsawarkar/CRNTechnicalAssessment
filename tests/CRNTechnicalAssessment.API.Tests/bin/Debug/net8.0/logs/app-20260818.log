@@ -1,0 +1,822 @@
+2026-08-18 11:13:52.392 +05:30 [INF] User profile is available. Using 'C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-08-18 11:13:52.760 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - null null
+2026-08-18 11:13:52.784 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-08-18 11:13:52.810 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-08-18 11:13:52.812 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-18 11:13:52.815 +05:30 [INF] HTTP GET /api/Products responded 401 in 29.9791 ms
+2026-08-18 11:13:52.819 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - 401 null null 59.9735ms
+2026-08-18 11:13:52.866 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 30
+2026-08-18 11:13:52.909 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-08-18 11:13:52.910 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-08-18 11:13:52.910 +05:30 [INF] HTTP POST /api/Products responded 403 in 41.5080 ms
+2026-08-18 11:13:52.911 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 403 null null 44.6998ms
+2026-08-18 11:13:52.913 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - null null
+2026-08-18 11:13:52.917 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-18 11:13:52.931 +05:30 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(Int32, Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:13:54.600 +05:30 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Product] AS [p]
+2026-08-18 11:13:54.657 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CreatedBy], [p].[CreatedOn], [p].[ModifiedBy], [p].[ModifiedOn], [p].[ProductName]
+FROM [Product] AS [p]
+ORDER BY [p].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-08-18 11:13:54.665 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[CRNTechnicalAssessment.Domain.Entities.Product, CRNTechnicalAssessment.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[CRNTechnicalAssessment.Application.DTOs.ProductDto, CRNTechnicalAssessment.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-18 11:13:54.682 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API) in 1748.7549ms
+2026-08-18 11:13:54.682 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-18 11:13:54.683 +05:30 [INF] HTTP GET /api/Products responded 200 in 1768.7322 ms
+2026-08-18 11:13:54.688 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 42
+2026-08-18 11:13:54.688 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 1774.6803ms
+2026-08-18 11:13:54.688 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:13:54.692 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CRNTechnicalAssessment.Application.DTOs.CreateProductDto) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:13:54.836 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (DbType = DateTime2), @p2='?' (Size = 100), @p3='?' (DbType = DateTime2), @p4='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Product] ([CreatedBy], [CreatedOn], [ModifiedBy], [ModifiedOn], [ProductName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-08-18 11:13:54.853 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'CRNTechnicalAssessment.Application.DTOs.ProductDto'.
+2026-08-18 11:13:54.860 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API) in 168.4284ms
+2026-08-18 11:13:54.861 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:13:54.861 +05:30 [INF] HTTP POST /api/Products responded 201 in 173.0753 ms
+2026-08-18 11:13:54.861 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 201 null application/json; charset=utf-8 173.6462ms
+2026-08-18 11:18:08.468 +05:30 [INF] User profile is available. Using 'C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-08-18 11:18:08.527 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - null null
+2026-08-18 11:18:08.548 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-08-18 11:18:08.562 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-08-18 11:18:08.564 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-18 11:18:08.566 +05:30 [INF] HTTP GET /api/Products responded 401 in 17.6853 ms
+2026-08-18 11:18:08.570 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - 401 null null 42.9501ms
+2026-08-18 11:18:08.599 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 30
+2026-08-18 11:18:08.625 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-08-18 11:18:08.626 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-08-18 11:18:08.626 +05:30 [INF] HTTP POST /api/Products responded 403 in 24.2105 ms
+2026-08-18 11:18:08.626 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 403 null null 27.249ms
+2026-08-18 11:18:08.628 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 18
+2026-08-18 11:18:08.632 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:18:08.642 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CRNTechnicalAssessment.Application.DTOs.CreateProductDto) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:18:08.738 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API) in 93.7536ms
+2026-08-18 11:18:08.738 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:18:08.745 +05:30 [INF] HTTP POST /api/Products responded 400 in 115.9665 ms
+2026-08-18 11:18:08.746 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 400 null application/json 117.7959ms
+2026-08-18 11:18:08.748 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - null null
+2026-08-18 11:18:08.749 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-18 11:18:08.752 +05:30 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(Int32, Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:18:09.330 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Product] AS [p]
+2026-08-18 11:18:09.376 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CreatedBy], [p].[CreatedOn], [p].[ModifiedBy], [p].[ModifiedOn], [p].[ProductName]
+FROM [Product] AS [p]
+ORDER BY [p].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-08-18 11:18:09.383 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[CRNTechnicalAssessment.Domain.Entities.Product, CRNTechnicalAssessment.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[CRNTechnicalAssessment.Application.DTOs.ProductDto, CRNTechnicalAssessment.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-18 11:18:09.392 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API) in 640.3094ms
+2026-08-18 11:18:09.393 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-18 11:18:09.394 +05:30 [INF] HTTP GET /api/Products responded 200 in 644.8505 ms
+2026-08-18 11:18:09.398 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 42
+2026-08-18 11:18:09.398 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 649.5397ms
+2026-08-18 11:18:09.398 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:18:09.398 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CRNTechnicalAssessment.Application.DTOs.CreateProductDto) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:18:09.533 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (DbType = DateTime2), @p2='?' (Size = 100), @p3='?' (DbType = DateTime2), @p4='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Product] ([CreatedBy], [CreatedOn], [ModifiedBy], [ModifiedOn], [ProductName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-08-18 11:18:09.549 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'CRNTechnicalAssessment.Application.DTOs.ProductDto'.
+2026-08-18 11:18:09.556 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API) in 157.8162ms
+2026-08-18 11:18:09.556 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:18:09.556 +05:30 [INF] HTTP POST /api/Products responded 201 in 158.3650 ms
+2026-08-18 11:18:09.556 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 201 null application/json; charset=utf-8 158.7023ms
+2026-08-18 11:18:51.410 +05:30 [INF] User profile is available. Using 'C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-08-18 11:18:51.698 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - null null
+2026-08-18 11:18:51.719 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-08-18 11:18:51.761 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-08-18 11:18:51.763 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-18 11:18:51.765 +05:30 [INF] HTTP GET /api/Products responded 401 in 46.3905 ms
+2026-08-18 11:18:51.768 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - 401 null null 70.5643ms
+2026-08-18 11:18:51.817 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 30
+2026-08-18 11:18:51.844 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-08-18 11:18:51.845 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-08-18 11:18:51.845 +05:30 [INF] HTTP POST /api/Products responded 403 in 25.0076 ms
+2026-08-18 11:18:51.846 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 403 null null 28.5327ms
+2026-08-18 11:18:51.849 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 18
+2026-08-18 11:18:51.852 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:18:51.862 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CRNTechnicalAssessment.Application.DTOs.CreateProductDto) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:18:51.980 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API) in 116.4993ms
+2026-08-18 11:18:51.981 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:18:51.987 +05:30 [INF] HTTP POST /api/Products responded 400 in 137.6215 ms
+2026-08-18 11:18:51.988 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 400 null application/json 139.5799ms
+2026-08-18 11:18:51.991 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - null null
+2026-08-18 11:18:51.992 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-18 11:18:51.995 +05:30 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(Int32, Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:18:52.642 +05:30 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Product] AS [p]
+2026-08-18 11:18:52.696 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CreatedBy], [p].[CreatedOn], [p].[ModifiedBy], [p].[ModifiedOn], [p].[ProductName]
+FROM [Product] AS [p]
+ORDER BY [p].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-08-18 11:18:52.703 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[CRNTechnicalAssessment.Domain.Entities.Product, CRNTechnicalAssessment.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[CRNTechnicalAssessment.Application.DTOs.ProductDto, CRNTechnicalAssessment.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-18 11:18:52.721 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API) in 725.8469ms
+2026-08-18 11:18:52.721 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-18 11:18:52.722 +05:30 [INF] HTTP GET /api/Products responded 200 in 730.8621 ms
+2026-08-18 11:18:52.726 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 42
+2026-08-18 11:18:52.727 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 735.8476ms
+2026-08-18 11:18:52.727 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:18:52.727 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CRNTechnicalAssessment.Application.DTOs.CreateProductDto) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:18:52.855 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (DbType = DateTime2), @p2='?' (Size = 100), @p3='?' (DbType = DateTime2), @p4='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Product] ([CreatedBy], [CreatedOn], [ModifiedBy], [ModifiedOn], [ProductName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-08-18 11:18:52.871 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'CRNTechnicalAssessment.Application.DTOs.ProductDto'.
+2026-08-18 11:18:52.879 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API) in 151.66ms
+2026-08-18 11:18:52.879 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:18:52.879 +05:30 [INF] HTTP POST /api/Products responded 201 in 152.5438 ms
+2026-08-18 11:18:52.879 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 201 null application/json; charset=utf-8 153.0858ms
+2026-08-18 11:20:16.052 +05:30 [INF] User profile is available. Using 'C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-08-18 11:20:16.345 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - null null
+2026-08-18 11:20:16.367 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-08-18 11:20:16.395 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-08-18 11:20:16.398 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-18 11:20:16.399 +05:30 [INF] HTTP GET /api/Products responded 401 in 32.5831 ms
+2026-08-18 11:20:16.403 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - 401 null null 58.6021ms
+2026-08-18 11:20:16.448 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 30
+2026-08-18 11:20:16.474 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-08-18 11:20:16.475 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-08-18 11:20:16.475 +05:30 [INF] HTTP POST /api/Products responded 403 in 25.3084 ms
+2026-08-18 11:20:16.476 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 403 null null 28.0387ms
+2026-08-18 11:20:16.479 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 18
+2026-08-18 11:20:16.482 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:20:16.492 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CRNTechnicalAssessment.Application.DTOs.CreateProductDto) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:20:16.583 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API) in 89.2725ms
+2026-08-18 11:20:16.584 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:20:16.594 +05:30 [INF] HTTP POST /api/Products responded 400 in 114.8860 ms
+2026-08-18 11:20:16.596 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 400 null application/json 117.0418ms
+2026-08-18 11:20:16.598 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products/1 - null null
+2026-08-18 11:20:16.599 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 11:20:16.602 +05:30 [INF] Route matched with {action = "GetById", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:20:17.241 +05:30 [INF] Executed DbCommand (28ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CreatedBy], [p].[CreatedOn], [p].[ModifiedBy], [p].[ModifiedOn], [p].[ProductName]
+FROM [Product] AS [p]
+WHERE [p].[Id] = @__id_0
+2026-08-18 11:20:17.260 +05:30 [INF] Executing OkObjectResult, writing value of type 'CRNTechnicalAssessment.Application.DTOs.ProductDto'.
+2026-08-18 11:20:17.268 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API) in 665.4415ms
+2026-08-18 11:20:17.268 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 11:20:17.268 +05:30 [INF] HTTP GET /api/Products/1 responded 200 in 669.9024 ms
+2026-08-18 11:20:17.272 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - null null
+2026-08-18 11:20:17.273 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-18 11:20:17.274 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products/1 - 200 null application/json; charset=utf-8 675.6019ms
+2026-08-18 11:20:17.276 +05:30 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(Int32, Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:20:17.357 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Product] AS [p]
+2026-08-18 11:20:17.365 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CreatedBy], [p].[CreatedOn], [p].[ModifiedBy], [p].[ModifiedOn], [p].[ProductName]
+FROM [Product] AS [p]
+ORDER BY [p].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-08-18 11:20:17.367 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[CRNTechnicalAssessment.Domain.Entities.Product, CRNTechnicalAssessment.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[CRNTechnicalAssessment.Application.DTOs.ProductDto, CRNTechnicalAssessment.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-18 11:20:17.368 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API) in 91.7013ms
+2026-08-18 11:20:17.368 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-18 11:20:17.368 +05:30 [INF] HTTP GET /api/Products responded 200 in 95.5287 ms
+2026-08-18 11:20:17.368 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 96.0175ms
+2026-08-18 11:20:17.372 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 42
+2026-08-18 11:20:17.372 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:20:17.372 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CRNTechnicalAssessment.Application.DTOs.CreateProductDto) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:20:17.477 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (DbType = DateTime2), @p2='?' (Size = 100), @p3='?' (DbType = DateTime2), @p4='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Product] ([CreatedBy], [CreatedOn], [ModifiedBy], [ModifiedOn], [ProductName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-08-18 11:20:17.493 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'CRNTechnicalAssessment.Application.DTOs.ProductDto'.
+2026-08-18 11:20:17.499 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API) in 126.9009ms
+2026-08-18 11:20:17.499 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:20:17.499 +05:30 [INF] HTTP POST /api/Products responded 201 in 127.6600 ms
+2026-08-18 11:20:17.500 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 201 null application/json; charset=utf-8 128.0695ms
+2026-08-18 11:23:05.411 +05:30 [INF] User profile is available. Using 'C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-08-18 11:23:05.645 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - null null
+2026-08-18 11:23:05.667 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-08-18 11:23:05.695 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-08-18 11:23:05.698 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-18 11:23:05.699 +05:30 [INF] HTTP GET /api/Products responded 401 in 32.7741 ms
+2026-08-18 11:23:05.703 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - 401 null null 58.8081ms
+2026-08-18 11:23:05.747 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 30
+2026-08-18 11:23:05.773 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-08-18 11:23:05.774 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-08-18 11:23:05.774 +05:30 [INF] HTTP POST /api/Products responded 403 in 24.5909 ms
+2026-08-18 11:23:05.774 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 403 null null 27.396ms
+2026-08-18 11:23:05.777 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 18
+2026-08-18 11:23:05.780 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:23:05.791 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CRNTechnicalAssessment.Application.DTOs.CreateProductDto) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:23:05.880 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API) in 87.3907ms
+2026-08-18 11:23:05.881 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:23:05.888 +05:30 [INF] HTTP POST /api/Products responded 400 in 110.0282 ms
+2026-08-18 11:23:05.889 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 400 null application/json 112.1204ms
+2026-08-18 11:23:05.891 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products/1 - null null
+2026-08-18 11:23:05.892 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 11:23:05.895 +05:30 [INF] Route matched with {action = "GetById", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:23:06.543 +05:30 [INF] Executed DbCommand (30ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CreatedBy], [p].[CreatedOn], [p].[ModifiedBy], [p].[ModifiedOn], [p].[ProductName]
+FROM [Product] AS [p]
+WHERE [p].[Id] = @__id_0
+2026-08-18 11:23:06.563 +05:30 [INF] Executing OkObjectResult, writing value of type 'CRNTechnicalAssessment.Application.DTOs.ProductDto'.
+2026-08-18 11:23:06.573 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API) in 677.0192ms
+2026-08-18 11:23:06.573 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 11:23:06.574 +05:30 [INF] HTTP GET /api/Products/1 responded 200 in 682.0106 ms
+2026-08-18 11:23:06.577 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products/999999 - null null
+2026-08-18 11:23:06.578 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 11:23:06.578 +05:30 [INF] Route matched with {action = "GetById", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:23:06.578 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products/1 - 200 null application/json; charset=utf-8 687.0303ms
+2026-08-18 11:23:06.615 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CreatedBy], [p].[CreatedOn], [p].[ModifiedBy], [p].[ModifiedOn], [p].[ProductName]
+FROM [Product] AS [p]
+WHERE [p].[Id] = @__id_0
+2026-08-18 11:23:06.616 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2026-08-18 11:23:06.636 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API) in 58.0742ms
+2026-08-18 11:23:06.636 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 11:23:06.637 +05:30 [INF] HTTP GET /api/Products/999999 responded 404 in 58.8465 ms
+2026-08-18 11:23:06.637 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products/999999 - 404 null application/problem+json; charset=utf-8 59.2855ms
+2026-08-18 11:23:06.639 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - null null
+2026-08-18 11:23:06.640 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-18 11:23:06.643 +05:30 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(Int32, Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:23:06.689 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Product] AS [p]
+2026-08-18 11:23:06.699 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CreatedBy], [p].[CreatedOn], [p].[ModifiedBy], [p].[ModifiedOn], [p].[ProductName]
+FROM [Product] AS [p]
+ORDER BY [p].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-08-18 11:23:06.701 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[CRNTechnicalAssessment.Domain.Entities.Product, CRNTechnicalAssessment.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[CRNTechnicalAssessment.Application.DTOs.ProductDto, CRNTechnicalAssessment.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-18 11:23:06.702 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API) in 58.3958ms
+2026-08-18 11:23:06.702 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-18 11:23:06.702 +05:30 [INF] HTTP GET /api/Products responded 200 in 62.2894 ms
+2026-08-18 11:23:06.702 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 62.7ms
+2026-08-18 11:23:06.705 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 42
+2026-08-18 11:23:06.705 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:23:06.705 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CRNTechnicalAssessment.Application.DTOs.CreateProductDto) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:23:06.806 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (DbType = DateTime2), @p2='?' (Size = 100), @p3='?' (DbType = DateTime2), @p4='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Product] ([CreatedBy], [CreatedOn], [ModifiedBy], [ModifiedOn], [ProductName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-08-18 11:23:06.821 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'CRNTechnicalAssessment.Application.DTOs.ProductDto'.
+2026-08-18 11:23:06.829 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API) in 123.4484ms
+2026-08-18 11:23:06.829 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:23:06.829 +05:30 [INF] HTTP POST /api/Products responded 201 in 124.0852 ms
+2026-08-18 11:23:06.829 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 201 null application/json; charset=utf-8 124.4102ms
+2026-08-18 11:24:45.400 +05:30 [INF] User profile is available. Using 'C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-08-18 11:24:45.743 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost/api/Products/1 - null null
+2026-08-18 11:24:45.760 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-08-18 11:24:45.804 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-08-18 11:24:45.805 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-08-18 11:24:45.807 +05:30 [INF] HTTP DELETE /api/Products/1 responded 403 in 46.3428 ms
+2026-08-18 11:24:45.810 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost/api/Products/1 - 403 null null 68.0444ms
+2026-08-18 11:24:45.823 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - null null
+2026-08-18 11:24:45.828 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-08-18 11:24:45.830 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-18 11:24:45.831 +05:30 [INF] HTTP GET /api/Products responded 401 in 4.9381 ms
+2026-08-18 11:24:45.831 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - 401 null null 8.3841ms
+2026-08-18 11:24:45.840 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 30
+2026-08-18 11:24:45.843 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-08-18 11:24:45.844 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-08-18 11:24:45.844 +05:30 [INF] HTTP POST /api/Products responded 403 in 1.4804 ms
+2026-08-18 11:24:45.844 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 403 null null 3.7978ms
+2026-08-18 11:24:45.847 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 18
+2026-08-18 11:24:45.849 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:24:45.859 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CRNTechnicalAssessment.Application.DTOs.CreateProductDto) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:24:45.952 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API) in 90.81ms
+2026-08-18 11:24:45.952 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:24:45.960 +05:30 [INF] HTTP POST /api/Products responded 400 in 112.1625 ms
+2026-08-18 11:24:45.960 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 400 null application/json 113.4609ms
+2026-08-18 11:24:45.965 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products/1 - null null
+2026-08-18 11:24:45.966 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 11:24:45.969 +05:30 [INF] Route matched with {action = "GetById", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:24:46.611 +05:30 [INF] Executed DbCommand (28ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CreatedBy], [p].[CreatedOn], [p].[ModifiedBy], [p].[ModifiedOn], [p].[ProductName]
+FROM [Product] AS [p]
+WHERE [p].[Id] = @__id_0
+2026-08-18 11:24:46.631 +05:30 [INF] Executing OkObjectResult, writing value of type 'CRNTechnicalAssessment.Application.DTOs.ProductDto'.
+2026-08-18 11:24:46.639 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API) in 669.9274ms
+2026-08-18 11:24:46.639 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 11:24:46.640 +05:30 [INF] HTTP GET /api/Products/1 responded 200 in 674.3218 ms
+2026-08-18 11:24:46.643 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products/999999 - null null
+2026-08-18 11:24:46.644 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 11:24:46.644 +05:30 [INF] Route matched with {action = "GetById", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:24:46.644 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products/1 - 200 null application/json; charset=utf-8 679.4559ms
+2026-08-18 11:24:46.681 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CreatedBy], [p].[CreatedOn], [p].[ModifiedBy], [p].[ModifiedOn], [p].[ProductName]
+FROM [Product] AS [p]
+WHERE [p].[Id] = @__id_0
+2026-08-18 11:24:46.682 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2026-08-18 11:24:46.692 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API) in 47.5532ms
+2026-08-18 11:24:46.692 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 11:24:46.692 +05:30 [INF] HTTP GET /api/Products/999999 responded 404 in 48.5451 ms
+2026-08-18 11:24:46.692 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products/999999 - 404 null application/problem+json; charset=utf-8 49.3219ms
+2026-08-18 11:24:46.694 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - null null
+2026-08-18 11:24:46.695 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-18 11:24:46.707 +05:30 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(Int32, Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:24:46.752 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Product] AS [p]
+2026-08-18 11:24:46.760 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CreatedBy], [p].[CreatedOn], [p].[ModifiedBy], [p].[ModifiedOn], [p].[ProductName]
+FROM [Product] AS [p]
+ORDER BY [p].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-08-18 11:24:46.763 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[CRNTechnicalAssessment.Domain.Entities.Product, CRNTechnicalAssessment.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[CRNTechnicalAssessment.Application.DTOs.ProductDto, CRNTechnicalAssessment.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-18 11:24:46.764 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API) in 56.8013ms
+2026-08-18 11:24:46.764 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-18 11:24:46.764 +05:30 [INF] HTTP GET /api/Products responded 200 in 69.2274 ms
+2026-08-18 11:24:46.764 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 69.9021ms
+2026-08-18 11:24:46.767 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 42
+2026-08-18 11:24:46.768 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:24:46.768 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CRNTechnicalAssessment.Application.DTOs.CreateProductDto) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:24:46.864 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (DbType = DateTime2), @p2='?' (Size = 100), @p3='?' (DbType = DateTime2), @p4='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Product] ([CreatedBy], [CreatedOn], [ModifiedBy], [ModifiedOn], [ProductName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-08-18 11:24:46.878 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'CRNTechnicalAssessment.Application.DTOs.ProductDto'.
+2026-08-18 11:24:46.886 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API) in 117.7816ms
+2026-08-18 11:24:46.886 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:24:46.886 +05:30 [INF] HTTP POST /api/Products responded 201 in 118.6628 ms
+2026-08-18 11:24:46.886 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 201 null application/json; charset=utf-8 119.0451ms
+2026-08-18 11:30:09.571 +05:30 [INF] User profile is available. Using 'C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-08-18 11:30:09.941 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost/api/Products/1 - null null
+2026-08-18 11:30:09.960 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-08-18 11:30:10.004 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-08-18 11:30:10.006 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-08-18 11:30:10.007 +05:30 [INF] HTTP DELETE /api/Products/1 responded 403 in 47.7404 ms
+2026-08-18 11:30:10.011 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost/api/Products/1 - 403 null null 71.6736ms
+2026-08-18 11:30:10.021 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - null null
+2026-08-18 11:30:10.028 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-08-18 11:30:10.030 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-18 11:30:10.030 +05:30 [INF] HTTP GET /api/Products responded 401 in 4.6105 ms
+2026-08-18 11:30:10.030 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - 401 null null 9.4766ms
+2026-08-18 11:30:10.039 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 30
+2026-08-18 11:30:10.043 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-08-18 11:30:10.043 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-08-18 11:30:10.043 +05:30 [INF] HTTP POST /api/Products responded 403 in 1.6667 ms
+2026-08-18 11:30:10.043 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 403 null null 3.9288ms
+2026-08-18 11:30:10.045 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 18
+2026-08-18 11:30:10.047 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:30:10.059 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CRNTechnicalAssessment.Application.DTOs.CreateProductDto) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:30:10.150 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API) in 88.4725ms
+2026-08-18 11:30:10.150 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:30:10.156 +05:30 [INF] HTTP POST /api/Products responded 400 in 110.6625 ms
+2026-08-18 11:30:10.157 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 400 null application/json 111.82ms
+2026-08-18 11:30:10.160 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products/1 - null null
+2026-08-18 11:30:10.161 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 11:30:10.165 +05:30 [INF] Route matched with {action = "GetById", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:30:11.603 +05:30 [INF] Executed DbCommand (30ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CreatedBy], [p].[CreatedOn], [p].[ModifiedBy], [p].[ModifiedOn], [p].[ProductName]
+FROM [Product] AS [p]
+WHERE [p].[Id] = @__id_0
+2026-08-18 11:30:11.622 +05:30 [INF] Executing OkObjectResult, writing value of type 'CRNTechnicalAssessment.Application.DTOs.ProductDto'.
+2026-08-18 11:30:11.631 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API) in 1466.032ms
+2026-08-18 11:30:11.631 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 11:30:11.632 +05:30 [INF] HTTP GET /api/Products/1 responded 200 in 1471.5433 ms
+2026-08-18 11:30:11.636 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products/999999 - null null
+2026-08-18 11:30:11.636 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 11:30:11.637 +05:30 [INF] Route matched with {action = "GetById", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:30:11.637 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products/1 - 200 null application/json; charset=utf-8 1476.3756ms
+2026-08-18 11:30:11.685 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[CreatedBy], [p].[CreatedOn], [p].[ModifiedBy], [p].[ModifiedOn], [p].[ProductName]
+FROM [Product] AS [p]
+WHERE [p].[Id] = @__id_0
+2026-08-18 11:30:11.686 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2026-08-18 11:30:11.695 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API) in 58.3903ms
+2026-08-18 11:30:11.695 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 11:30:11.695 +05:30 [INF] HTTP GET /api/Products/999999 responded 404 in 59.2315 ms
+2026-08-18 11:30:11.696 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products/999999 - 404 null application/problem+json; charset=utf-8 59.7819ms
+2026-08-18 11:30:11.707 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - null null
+2026-08-18 11:30:11.707 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-18 11:30:11.711 +05:30 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(Int32, Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:30:11.748 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Product] AS [p]
+2026-08-18 11:30:11.756 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CreatedBy], [p].[CreatedOn], [p].[ModifiedBy], [p].[ModifiedOn], [p].[ProductName]
+FROM [Product] AS [p]
+ORDER BY [p].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-08-18 11:30:11.758 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[CRNTechnicalAssessment.Domain.Entities.Product, CRNTechnicalAssessment.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[CRNTechnicalAssessment.Application.DTOs.ProductDto, CRNTechnicalAssessment.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-18 11:30:11.759 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API) in 48.4054ms
+2026-08-18 11:30:11.759 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-18 11:30:11.759 +05:30 [INF] HTTP GET /api/Products responded 200 in 52.5558 ms
+2026-08-18 11:30:11.760 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 53.1259ms
+2026-08-18 11:30:11.762 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 42
+2026-08-18 11:30:11.763 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:30:11.763 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CRNTechnicalAssessment.Application.DTOs.CreateProductDto) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:30:11.860 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (DbType = DateTime2), @p2='?' (Size = 100), @p3='?' (DbType = DateTime2), @p4='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Product] ([CreatedBy], [CreatedOn], [ModifiedBy], [ModifiedOn], [ProductName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-08-18 11:30:11.875 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'CRNTechnicalAssessment.Application.DTOs.ProductDto'.
+2026-08-18 11:30:11.883 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API) in 119.5971ms
+2026-08-18 11:30:11.883 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:30:11.883 +05:30 [INF] HTTP POST /api/Products responded 201 in 120.3947 ms
+2026-08-18 11:30:11.883 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 201 null application/json; charset=utf-8 120.7875ms
+2026-08-18 11:39:39.321 +05:30 [INF] Saved 0 entities to in-memory store.
+2026-08-18 11:39:39.401 +05:30 [INF] User profile is available. Using 'C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-08-18 11:39:39.730 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost/api/Products/1 - null null
+2026-08-18 11:39:39.750 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-08-18 11:39:39.788 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-08-18 11:39:39.789 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-08-18 11:39:39.790 +05:30 [INF] HTTP DELETE /api/Products/1 responded 403 in 40.6516 ms
+2026-08-18 11:39:39.794 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost/api/Products/1 - 403 null null 64.7064ms
+2026-08-18 11:39:39.805 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - null null
+2026-08-18 11:39:39.810 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-08-18 11:39:39.812 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-18 11:39:39.812 +05:30 [INF] HTTP GET /api/Products responded 401 in 4.9842 ms
+2026-08-18 11:39:39.813 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - 401 null null 8.2104ms
+2026-08-18 11:39:39.822 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 30
+2026-08-18 11:39:39.825 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-08-18 11:39:39.826 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-08-18 11:39:39.826 +05:30 [INF] HTTP POST /api/Products responded 403 in 1.5243 ms
+2026-08-18 11:39:39.826 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 403 null null 3.8045ms
+2026-08-18 11:39:39.829 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 18
+2026-08-18 11:39:39.831 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:39:39.841 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CRNTechnicalAssessment.Application.DTOs.CreateProductDto) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:39:39.870 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API) in 26.6362ms
+2026-08-18 11:39:39.870 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:39:39.878 +05:30 [INF] HTTP POST /api/Products responded 400 in 48.5509 ms
+2026-08-18 11:39:39.878 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 400 null application/json 49.8796ms
+2026-08-18 11:39:39.881 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products/1 - null null
+2026-08-18 11:39:39.882 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 11:39:39.884 +05:30 [INF] Route matched with {action = "GetById", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:39:39.993 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2026-08-18 11:39:40.004 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API) in 119.5147ms
+2026-08-18 11:39:40.004 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 11:39:40.004 +05:30 [INF] HTTP GET /api/Products/1 responded 404 in 122.7436 ms
+2026-08-18 11:39:40.004 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products/1 - 404 null application/problem+json; charset=utf-8 123.3446ms
+2026-08-18 11:39:40.037 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products/999999 - null null
+2026-08-18 11:39:40.038 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 11:39:40.038 +05:30 [INF] Route matched with {action = "GetById", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:39:40.067 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2026-08-18 11:39:40.067 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API) in 28.7943ms
+2026-08-18 11:39:40.067 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 11:39:40.067 +05:30 [INF] HTTP GET /api/Products/999999 responded 404 in 29.4417 ms
+2026-08-18 11:39:40.067 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products/999999 - 404 null application/problem+json; charset=utf-8 29.7537ms
+2026-08-18 11:39:40.069 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - null null
+2026-08-18 11:39:40.070 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-18 11:39:40.073 +05:30 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(Int32, Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:39:40.091 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[CRNTechnicalAssessment.Domain.Entities.Product, CRNTechnicalAssessment.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[CRNTechnicalAssessment.Application.DTOs.ProductDto, CRNTechnicalAssessment.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-18 11:39:40.096 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API) in 22.4787ms
+2026-08-18 11:39:40.096 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-18 11:39:40.097 +05:30 [INF] HTTP GET /api/Products responded 200 in 26.8747 ms
+2026-08-18 11:39:40.097 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 27.2145ms
+2026-08-18 11:39:40.099 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 42
+2026-08-18 11:39:40.100 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:39:40.100 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CRNTechnicalAssessment.Application.DTOs.CreateProductDto) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:39:40.178 +05:30 [INF] Saved 1 entities to in-memory store.
+2026-08-18 11:39:40.181 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'CRNTechnicalAssessment.Application.DTOs.ProductDto'.
+2026-08-18 11:39:40.190 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API) in 90.0588ms
+2026-08-18 11:39:40.190 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:39:40.190 +05:30 [INF] HTTP POST /api/Products responded 201 in 90.9722 ms
+2026-08-18 11:39:40.190 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 201 null application/json; charset=utf-8 91.3526ms
+2026-08-18 11:42:26.728 +05:30 [INF] Saved 0 entities to in-memory store.
+2026-08-18 11:42:26.881 +05:30 [INF] Saved 1 entities to in-memory store.
+2026-08-18 11:42:26.929 +05:30 [INF] User profile is available. Using 'C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-08-18 11:42:27.230 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost/api/Products/1 - null null
+2026-08-18 11:42:27.248 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-08-18 11:42:27.288 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-08-18 11:42:27.289 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-08-18 11:42:27.291 +05:30 [INF] HTTP DELETE /api/Products/1 responded 403 in 42.6055 ms
+2026-08-18 11:42:27.294 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost/api/Products/1 - 403 null null 65.3728ms
+2026-08-18 11:42:27.305 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - null null
+2026-08-18 11:42:27.311 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-08-18 11:42:27.313 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-18 11:42:27.313 +05:30 [INF] HTTP GET /api/Products responded 401 in 4.6838 ms
+2026-08-18 11:42:27.314 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - 401 null null 7.9973ms
+2026-08-18 11:42:27.323 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 30
+2026-08-18 11:42:27.327 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-08-18 11:42:27.327 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-08-18 11:42:27.327 +05:30 [INF] HTTP POST /api/Products responded 403 in 1.7367 ms
+2026-08-18 11:42:27.327 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 403 null null 4.2941ms
+2026-08-18 11:42:27.330 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 18
+2026-08-18 11:42:27.332 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:42:27.342 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CRNTechnicalAssessment.Application.DTOs.CreateProductDto) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:42:27.371 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API) in 26.8215ms
+2026-08-18 11:42:27.371 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:42:27.378 +05:30 [INF] HTTP POST /api/Products responded 400 in 48.2865 ms
+2026-08-18 11:42:27.379 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 400 null application/json 49.2331ms
+2026-08-18 11:42:27.382 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products/1 - null null
+2026-08-18 11:42:27.382 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 11:42:27.386 +05:30 [INF] Route matched with {action = "GetById", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:42:27.432 +05:30 [INF] Executing OkObjectResult, writing value of type 'CRNTechnicalAssessment.Application.DTOs.ProductDto'.
+2026-08-18 11:42:27.442 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API) in 55.8721ms
+2026-08-18 11:42:27.442 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 11:42:27.442 +05:30 [INF] HTTP GET /api/Products/1 responded 200 in 60.2444 ms
+2026-08-18 11:42:27.443 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products/1 - 200 null application/json; charset=utf-8 61.0058ms
+2026-08-18 11:42:27.445 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products/999999 - null null
+2026-08-18 11:42:27.446 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 11:42:27.446 +05:30 [INF] Route matched with {action = "GetById", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:42:27.469 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2026-08-18 11:42:27.477 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API) in 31.1013ms
+2026-08-18 11:42:27.478 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 11:42:27.478 +05:30 [INF] HTTP GET /api/Products/999999 responded 404 in 31.9649 ms
+2026-08-18 11:42:27.478 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products/999999 - 404 null application/problem+json; charset=utf-8 32.3003ms
+2026-08-18 11:42:27.480 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - null null
+2026-08-18 11:42:27.480 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-18 11:42:27.482 +05:30 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(Int32, Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:42:27.505 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[CRNTechnicalAssessment.Domain.Entities.Product, CRNTechnicalAssessment.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[CRNTechnicalAssessment.Application.DTOs.ProductDto, CRNTechnicalAssessment.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-18 11:42:27.514 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API) in 31.3717ms
+2026-08-18 11:42:27.514 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-18 11:42:27.514 +05:30 [INF] HTTP GET /api/Products responded 200 in 34.2541 ms
+2026-08-18 11:42:27.514 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 34.5631ms
+2026-08-18 11:42:27.517 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 42
+2026-08-18 11:42:27.518 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:42:27.518 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CRNTechnicalAssessment.Application.DTOs.CreateProductDto) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:42:27.535 +05:30 [INF] Saved 1 entities to in-memory store.
+2026-08-18 11:42:27.536 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'CRNTechnicalAssessment.Application.DTOs.ProductDto'.
+2026-08-18 11:42:27.543 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API) in 24.9099ms
+2026-08-18 11:42:27.544 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:42:27.544 +05:30 [INF] HTTP POST /api/Products responded 201 in 26.1028 ms
+2026-08-18 11:42:27.544 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 201 null application/json; charset=utf-8 26.4634ms
+2026-08-18 11:47:04.394 +05:30 [INF] Saved 0 entities to in-memory store.
+2026-08-18 11:47:04.541 +05:30 [INF] Saved 1 entities to in-memory store.
+2026-08-18 11:47:04.588 +05:30 [INF] User profile is available. Using 'C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-08-18 11:47:04.898 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost/api/Products/1 - null null
+2026-08-18 11:47:04.916 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-08-18 11:47:04.960 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-08-18 11:47:04.962 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-08-18 11:47:04.963 +05:30 [INF] HTTP DELETE /api/Products/1 responded 403 in 47.2082 ms
+2026-08-18 11:47:04.967 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost/api/Products/1 - 403 null null 69.5692ms
+2026-08-18 11:47:04.978 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - null null
+2026-08-18 11:47:04.983 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-08-18 11:47:04.986 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-18 11:47:04.986 +05:30 [INF] HTTP GET /api/Products responded 401 in 5.4650 ms
+2026-08-18 11:47:04.987 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - 401 null null 8.8874ms
+2026-08-18 11:47:04.996 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 30
+2026-08-18 11:47:04.999 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-08-18 11:47:05.000 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-08-18 11:47:05.000 +05:30 [INF] HTTP POST /api/Products responded 403 in 1.6892 ms
+2026-08-18 11:47:05.000 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 403 null null 4.0104ms
+2026-08-18 11:47:05.003 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 18
+2026-08-18 11:47:05.007 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:47:05.016 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CRNTechnicalAssessment.Application.DTOs.CreateProductDto) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:47:05.045 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API) in 27.2744ms
+2026-08-18 11:47:05.045 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:47:05.054 +05:30 [INF] HTTP POST /api/Products responded 400 in 50.9293 ms
+2026-08-18 11:47:05.056 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 400 null application/json 53.2809ms
+2026-08-18 11:47:05.058 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products/1 - null null
+2026-08-18 11:47:05.059 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 11:47:05.061 +05:30 [INF] Route matched with {action = "GetById", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:47:05.110 +05:30 [INF] Executing OkObjectResult, writing value of type 'CRNTechnicalAssessment.Application.DTOs.ProductDto'.
+2026-08-18 11:47:05.119 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API) in 57.2298ms
+2026-08-18 11:47:05.119 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 11:47:05.119 +05:30 [INF] HTTP GET /api/Products/1 responded 200 in 60.7064 ms
+2026-08-18 11:47:05.119 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products/1 - 200 null application/json; charset=utf-8 61.5052ms
+2026-08-18 11:47:05.122 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products/999999 - null null
+2026-08-18 11:47:05.123 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 11:47:05.123 +05:30 [INF] Route matched with {action = "GetById", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:47:05.147 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2026-08-18 11:47:05.157 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API) in 34.1361ms
+2026-08-18 11:47:05.157 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 11:47:05.157 +05:30 [INF] HTTP GET /api/Products/999999 responded 404 in 35.2016 ms
+2026-08-18 11:47:05.158 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products/999999 - 404 null application/problem+json; charset=utf-8 35.6046ms
+2026-08-18 11:47:05.160 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - null null
+2026-08-18 11:47:05.161 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-18 11:47:05.164 +05:30 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(Int32, Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:47:05.184 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[CRNTechnicalAssessment.Domain.Entities.Product, CRNTechnicalAssessment.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[CRNTechnicalAssessment.Application.DTOs.ProductDto, CRNTechnicalAssessment.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-18 11:47:05.184 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API) in 20.1273ms
+2026-08-18 11:47:05.185 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-18 11:47:05.185 +05:30 [INF] HTTP GET /api/Products responded 200 in 24.4203 ms
+2026-08-18 11:47:05.185 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 25.1326ms
+2026-08-18 11:47:05.187 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost/api/Products/1 - null null
+2026-08-18 11:47:05.188 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Delete (CRNTechnicalAssessment.API)'
+2026-08-18 11:47:05.191 +05:30 [INF] Route matched with {action = "Delete", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:47:05.202 +05:30 [INF] Saved 1 entities to in-memory store.
+2026-08-18 11:47:05.205 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-08-18 11:47:05.205 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.Delete (CRNTechnicalAssessment.API) in 14.0671ms
+2026-08-18 11:47:05.205 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Delete (CRNTechnicalAssessment.API)'
+2026-08-18 11:47:05.205 +05:30 [INF] HTTP DELETE /api/Products/1 responded 204 in 17.8771 ms
+2026-08-18 11:47:05.206 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost/api/Products/1 - 204 null null 18.2648ms
+2026-08-18 11:47:05.208 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 42
+2026-08-18 11:47:05.209 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:47:05.219 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CRNTechnicalAssessment.Application.DTOs.CreateProductDto) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 11:47:05.231 +05:30 [INF] Saved 1 entities to in-memory store.
+2026-08-18 11:47:05.232 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'CRNTechnicalAssessment.Application.DTOs.ProductDto'.
+2026-08-18 11:47:05.241 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API) in 21.2236ms
+2026-08-18 11:47:05.241 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 11:47:05.241 +05:30 [INF] HTTP POST /api/Products responded 201 in 32.1468 ms
+2026-08-18 11:47:05.241 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 201 null application/json; charset=utf-8 32.5741ms
+2026-08-18 12:14:26.542 +05:30 [INF] Saved 0 entities to in-memory store.
+2026-08-18 12:14:26.696 +05:30 [INF] Saved 1 entities to in-memory store.
+2026-08-18 12:14:26.747 +05:30 [INF] User profile is available. Using 'C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-08-18 12:14:27.230 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost/api/Products/1 - null null
+2026-08-18 12:14:27.252 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-08-18 12:14:27.295 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-08-18 12:14:27.297 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-08-18 12:14:27.298 +05:30 [INF] HTTP DELETE /api/Products/1 responded 403 in 46.9769 ms
+2026-08-18 12:14:27.303 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost/api/Products/1 - 403 null null 74.6193ms
+2026-08-18 12:14:27.319 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - null null
+2026-08-18 12:14:27.327 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-08-18 12:14:27.330 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-18 12:14:27.330 +05:30 [INF] HTTP GET /api/Products responded 401 in 7.3397 ms
+2026-08-18 12:14:27.331 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - 401 null null 12.2203ms
+2026-08-18 12:14:27.355 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 30
+2026-08-18 12:14:27.360 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-08-18 12:14:27.361 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-08-18 12:14:27.361 +05:30 [INF] HTTP POST /api/Products responded 403 in 2.4325 ms
+2026-08-18 12:14:27.361 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 403 null null 6.4418ms
+2026-08-18 12:14:27.363 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 18
+2026-08-18 12:14:27.366 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 12:14:27.377 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CRNTechnicalAssessment.Application.DTOs.CreateProductDto) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 12:14:27.410 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API) in 29.9312ms
+2026-08-18 12:14:27.410 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 12:14:27.421 +05:30 [INF] HTTP POST /api/Products responded 400 in 57.0100 ms
+2026-08-18 12:14:27.422 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 400 null application/json 58.1496ms
+2026-08-18 12:14:27.425 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products/1 - null null
+2026-08-18 12:14:27.425 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 12:14:27.429 +05:30 [INF] Route matched with {action = "GetById", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 12:14:27.494 +05:30 [INF] Executing OkObjectResult, writing value of type 'CRNTechnicalAssessment.Application.DTOs.ProductDto'.
+2026-08-18 12:14:27.504 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API) in 75.0875ms
+2026-08-18 12:14:27.504 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 12:14:27.504 +05:30 [INF] HTTP GET /api/Products/1 responded 200 in 79.1349 ms
+2026-08-18 12:14:27.504 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products/1 - 200 null application/json; charset=utf-8 79.8149ms
+2026-08-18 12:14:27.507 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products/999999 - null null
+2026-08-18 12:14:27.508 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 12:14:27.508 +05:30 [INF] Route matched with {action = "GetById", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 12:14:27.532 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2026-08-18 12:14:27.541 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API) in 32.8738ms
+2026-08-18 12:14:27.541 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 12:14:27.541 +05:30 [INF] HTTP GET /api/Products/999999 responded 404 in 33.7252 ms
+2026-08-18 12:14:27.542 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products/999999 - 404 null application/problem+json; charset=utf-8 34.0515ms
+2026-08-18 12:14:27.544 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - null null
+2026-08-18 12:14:27.545 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-18 12:14:27.548 +05:30 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(Int32, Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 12:14:27.565 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[CRNTechnicalAssessment.Domain.Entities.Product, CRNTechnicalAssessment.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[CRNTechnicalAssessment.Application.DTOs.ProductDto, CRNTechnicalAssessment.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-18 12:14:27.575 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API) in 27.4438ms
+2026-08-18 12:14:27.576 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-18 12:14:27.576 +05:30 [INF] HTTP GET /api/Products responded 200 in 31.1405 ms
+2026-08-18 12:14:27.576 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 31.4072ms
+2026-08-18 12:14:27.578 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost/api/Products/1 - null null
+2026-08-18 12:14:27.578 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Delete (CRNTechnicalAssessment.API)'
+2026-08-18 12:14:27.582 +05:30 [INF] Route matched with {action = "Delete", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 12:14:27.592 +05:30 [INF] Saved 1 entities to in-memory store.
+2026-08-18 12:14:27.594 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-08-18 12:14:27.595 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.Delete (CRNTechnicalAssessment.API) in 12.9056ms
+2026-08-18 12:14:27.595 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Delete (CRNTechnicalAssessment.API)'
+2026-08-18 12:14:27.595 +05:30 [INF] HTTP DELETE /api/Products/1 responded 204 in 16.5789 ms
+2026-08-18 12:14:27.595 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost/api/Products/1 - 204 null null 17.0058ms
+2026-08-18 12:14:27.597 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 42
+2026-08-18 12:14:27.598 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 12:14:27.598 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CRNTechnicalAssessment.Application.DTOs.CreateProductDto) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 12:14:27.613 +05:30 [INF] Saved 1 entities to in-memory store.
+2026-08-18 12:14:27.614 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'CRNTechnicalAssessment.Application.DTOs.ProductDto'.
+2026-08-18 12:14:27.622 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API) in 24.6369ms
+2026-08-18 12:14:27.623 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 12:14:27.623 +05:30 [INF] HTTP POST /api/Products responded 201 in 25.4784 ms
+2026-08-18 12:14:27.623 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 201 null application/json; charset=utf-8 25.8613ms
+2026-08-18 12:29:21.284 +05:30 [INF] Saved 0 entities to in-memory store.
+2026-08-18 12:29:21.474 +05:30 [INF] Saved 1 entities to in-memory store.
+2026-08-18 12:29:21.555 +05:30 [INF] User profile is available. Using 'C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-08-18 12:29:22.161 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost/api/Products/1 - null null
+2026-08-18 12:29:22.189 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-08-18 12:29:22.247 +05:30 [INF] HTTP DELETE /api/Products/1 responded 404 in 59.1049 ms
+2026-08-18 12:29:22.253 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost/api/Products/1 - 404 null null 92.8603ms
+2026-08-18 12:29:22.258 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: DELETE http://localhost/api/Products/1, Response status code: 404
+2026-08-18 12:29:22.279 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - null null
+2026-08-18 12:29:22.289 +05:30 [INF] HTTP GET /api/Products responded 404 in 2.4349 ms
+2026-08-18 12:29:22.289 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - 404 null null 9.9039ms
+2026-08-18 12:29:22.290 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost/api/Products, Response status code: 404
+2026-08-18 12:29:22.311 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 30
+2026-08-18 12:29:22.322 +05:30 [INF] HTTP POST /api/Products responded 404 in 5.2020 ms
+2026-08-18 12:29:22.322 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 404 null null 11.3192ms
+2026-08-18 12:29:22.322 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost/api/Products, Response status code: 404
+2026-08-18 12:29:22.328 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 18
+2026-08-18 12:29:22.329 +05:30 [INF] HTTP POST /api/Products responded 404 in 0.3176 ms
+2026-08-18 12:29:22.329 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 404 null null 1.0431ms
+2026-08-18 12:29:22.329 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost/api/Products, Response status code: 404
+2026-08-18 12:29:22.334 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products/1 - null null
+2026-08-18 12:29:22.336 +05:30 [INF] HTTP GET /api/Products/1 responded 404 in 0.4829 ms
+2026-08-18 12:29:22.337 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products/1 - 404 null null 2.9248ms
+2026-08-18 12:29:22.337 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost/api/Products/1, Response status code: 404
+2026-08-18 12:29:22.341 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products/999999 - null null
+2026-08-18 12:29:22.341 +05:30 [INF] HTTP GET /api/Products/999999 responded 404 in 0.3249 ms
+2026-08-18 12:29:22.342 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products/999999 - 404 null null 0.8059ms
+2026-08-18 12:29:22.342 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost/api/Products/999999, Response status code: 404
+2026-08-18 12:29:22.345 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - null null
+2026-08-18 12:29:22.345 +05:30 [INF] HTTP GET /api/Products responded 404 in 0.2952 ms
+2026-08-18 12:29:22.345 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/Products?pageNumber=1&pageSize=10 - 404 null null 0.7033ms
+2026-08-18 12:29:22.345 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost/api/Products, Response status code: 404
+2026-08-18 12:29:22.350 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost/api/Products/1 - null null
+2026-08-18 12:29:22.351 +05:30 [INF] HTTP DELETE /api/Products/1 responded 404 in 0.2799 ms
+2026-08-18 12:29:22.351 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost/api/Products/1 - 404 null null 0.7957ms
+2026-08-18 12:29:22.351 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: DELETE http://localhost/api/Products/1, Response status code: 404
+2026-08-18 12:29:22.355 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/Products - application/json; charset=utf-8 42
+2026-08-18 12:29:22.356 +05:30 [INF] HTTP POST /api/Products responded 404 in 0.2381 ms
+2026-08-18 12:29:22.356 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/Products - 404 null null 0.6242ms
+2026-08-18 12:29:22.356 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost/api/Products, Response status code: 404
+2026-08-18 12:33:51.190 +05:30 [INF] Saved 0 entities to in-memory store.
+2026-08-18 12:33:51.381 +05:30 [INF] Saved 1 entities to in-memory store.
+2026-08-18 12:33:51.444 +05:30 [INF] User profile is available. Using 'C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-08-18 12:33:52.032 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost/api/v1/Products/1 - null null
+2026-08-18 12:33:52.064 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-08-18 12:33:52.120 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-08-18 12:33:52.121 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-08-18 12:33:52.124 +05:30 [INF] HTTP DELETE /api/v1/Products/1 responded 403 in 62.7401 ms
+2026-08-18 12:33:52.132 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost/api/v1/Products/1 - 403 null null 100.9456ms
+2026-08-18 12:33:52.148 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/v1/Products?pageNumber=1&pageSize=10 - null null
+2026-08-18 12:33:52.159 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-08-18 12:33:52.163 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-18 12:33:52.163 +05:30 [INF] HTTP GET /api/v1/Products responded 401 in 8.8651 ms
+2026-08-18 12:33:52.164 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/v1/Products?pageNumber=1&pageSize=10 - 401 null null 16.0624ms
+2026-08-18 12:33:52.181 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/v1/Products - application/json; charset=utf-8 30
+2026-08-18 12:33:52.188 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-08-18 12:33:52.188 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-08-18 12:33:52.188 +05:30 [INF] HTTP POST /api/v1/Products responded 403 in 2.6193 ms
+2026-08-18 12:33:52.188 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/v1/Products - 403 null null 7.3891ms
+2026-08-18 12:33:52.192 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/v1/Products - application/json; charset=utf-8 18
+2026-08-18 12:33:52.196 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 12:33:52.210 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CRNTechnicalAssessment.Application.DTOs.CreateProductDto) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 12:33:52.250 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API) in 36.9584ms
+2026-08-18 12:33:52.251 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 12:33:52.261 +05:30 [INF] HTTP POST /api/v1/Products responded 400 in 68.9493 ms
+2026-08-18 12:33:52.262 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/v1/Products - 400 null application/json 70.2047ms
+2026-08-18 12:33:52.268 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/v1/Products/1 - null null
+2026-08-18 12:33:52.270 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 12:33:52.274 +05:30 [INF] Route matched with {action = "GetById", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 12:33:52.332 +05:30 [INF] Executing OkObjectResult, writing value of type 'CRNTechnicalAssessment.Application.DTOs.ProductDto'.
+2026-08-18 12:33:52.343 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API) in 69.1467ms
+2026-08-18 12:33:52.344 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 12:33:52.344 +05:30 [INF] HTTP GET /api/v1/Products/1 responded 200 in 74.5528 ms
+2026-08-18 12:33:52.344 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/v1/Products/1 - 200 null application/json; charset=utf-8 75.8272ms
+2026-08-18 12:33:52.347 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/v1/Products/999999 - null null
+2026-08-18 12:33:52.347 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 12:33:52.348 +05:30 [INF] Route matched with {action = "GetById", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 12:33:52.382 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2026-08-18 12:33:52.394 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API) in 45.872ms
+2026-08-18 12:33:52.394 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetById (CRNTechnicalAssessment.API)'
+2026-08-18 12:33:52.394 +05:30 [INF] HTTP GET /api/v1/Products/999999 responded 404 in 47.1394 ms
+2026-08-18 12:33:52.394 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/v1/Products/999999 - 404 null application/problem+json; charset=utf-8 47.593ms
+2026-08-18 12:33:52.400 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost/api/v1/Products?pageNumber=1&pageSize=10 - null null
+2026-08-18 12:33:52.401 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-18 12:33:52.418 +05:30 [INF] Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(Int32, Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 12:33:52.440 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[CRNTechnicalAssessment.Domain.Entities.Product, CRNTechnicalAssessment.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[CRNTechnicalAssessment.Application.DTOs.ProductDto, CRNTechnicalAssessment.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-18 12:33:52.441 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API) in 22.7812ms
+2026-08-18 12:33:52.441 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.GetAll (CRNTechnicalAssessment.API)'
+2026-08-18 12:33:52.442 +05:30 [INF] HTTP GET /api/v1/Products responded 200 in 41.2392 ms
+2026-08-18 12:33:52.442 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost/api/v1/Products?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 41.7499ms
+2026-08-18 12:33:52.446 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost/api/v1/Products/1 - null null
+2026-08-18 12:33:52.448 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Delete (CRNTechnicalAssessment.API)'
+2026-08-18 12:33:52.453 +05:30 [INF] Route matched with {action = "Delete", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 12:33:52.470 +05:30 [INF] Saved 1 entities to in-memory store.
+2026-08-18 12:33:52.477 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-08-18 12:33:52.477 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.Delete (CRNTechnicalAssessment.API) in 23.3098ms
+2026-08-18 12:33:52.477 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Delete (CRNTechnicalAssessment.API)'
+2026-08-18 12:33:52.477 +05:30 [INF] HTTP DELETE /api/v1/Products/1 responded 204 in 30.6159 ms
+2026-08-18 12:33:52.478 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost/api/v1/Products/1 - 204 null null 31.3643ms
+2026-08-18 12:33:52.482 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost/api/v1/Products - application/json; charset=utf-8 42
+2026-08-18 12:33:52.483 +05:30 [INF] Executing endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 12:33:52.483 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CRNTechnicalAssessment.Application.DTOs.CreateProductDto) on controller CRNTechnicalAssessment.API.Controllers.ProductsController (CRNTechnicalAssessment.API).
+2026-08-18 12:33:52.503 +05:30 [INF] Saved 1 entities to in-memory store.
+2026-08-18 12:33:52.503 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'CRNTechnicalAssessment.Application.DTOs.ProductDto'.
+2026-08-18 12:33:52.517 +05:30 [INF] Executed action CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API) in 33.5047ms
+2026-08-18 12:33:52.517 +05:30 [INF] Executed endpoint 'CRNTechnicalAssessment.API.Controllers.ProductsController.Create (CRNTechnicalAssessment.API)'
+2026-08-18 12:33:52.517 +05:30 [INF] HTTP POST /api/v1/Products responded 201 in 34.9697 ms
+2026-08-18 12:33:52.517 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost/api/v1/Products - 201 null application/json; charset=utf-8 35.5417ms
